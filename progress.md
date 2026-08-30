@@ -1,4 +1,3 @@
-
 # FYH Progress
 
 > 记录 FYH 在 2026 EDA 精英挑战赛 Scan Insertion 项目中的个人工作进度。
@@ -6,16 +5,6 @@
 
 ---
 
-## 2026-08-30
-
-### 当前状态
-
-- 当前主责：
-- 当前阶段：
-- 正在进行：
-- 下一步：
-
----
 
 ## 工作记录
 
@@ -362,3 +351,27 @@ FYH 为其中的个人目录；Kanban 配置已移动到团队根 `.vscode/setti
 
 - 根工作区设置 JSON 解析通过。
 - 已确认 FYH 内不再保留旧的 `.vscode/settings.json`。
+
+---
+
+### 2026-08-31 — 切换为 TODO.md 单一看板数据源
+
+**状态变化**
+
+个人看板工作流已从 feature 卡片目录切换为直接维护 `TODO.md`；已删除空的
+`FYH/.devtool/features/` 目录，并移除团队根工作区对该目录及 Kanban Markdown 卡片
+选项的配置。`TODO.md` 现同时承担任务清单和看板渲染数据源。
+
+**关键文件**
+
+- `.vscode/settings.json`
+- `TODO.md`
+- `AGENTS.md`
+- `README.md`
+- `docs/agent使用技巧/kanban-markdown看板使用教程.md`
+
+**验证**
+
+- 已确认 `FYH/.devtool/features/` 不存在；
+- 已确认工作区设置仅保留 `todoSidebar.activeFile: ./FYH/TODO.md` 和完成动作配置；
+- 已在 ADR-011 记录该长期工作流决策。

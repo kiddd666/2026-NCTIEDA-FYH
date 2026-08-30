@@ -17,6 +17,7 @@
 | ADR-008 | 2026-08-30 | TODO 聚焦当前活跃任务并采用简洁看板粒度 | 已接受 |
 | ADR-009 | 2026-08-30 | 采用 Kanban Markdown + Codex skill 作为个人看板工作流 | 已接受 |
 | ADR-010 | 2026-08-31 | 分离团队工作区与 FYH 个人看板数据 | 已接受 |
+| ADR-011 | 2026-08-31 | 改用 TODO.md 作为唯一看板数据源 | 已接受 |
 
 ## ADR-001 — 统一个人记录位置并使用仓库级本地覆盖规则
 
@@ -433,4 +434,46 @@ VS Code 实际打开的是团队仓库根目录，而 FYH 只是其中的个人�
 - 团队根 `.vscode/settings.json`
 - 团队根 `.git/info/exclude`
 - `FYH/.devtool/features/`
+- `FYH/docs/agent使用技巧/kanban-markdown看板使用教程.md`
+
+## ADR-011 — 改用 TODO.md 作为唯一看板数据源
+
+**日期**：2026-08-31
+**状态**：已接受
+
+### 背景
+
+FYH 的个人待办需要一个简单、可直接编辑且不会与任务语义分裂的入口。此前的
+`FYH/.devtool/features/` 卡片目录和 `KANBAN.md` 视图增加了同步维护成本，且不符合
+当前以 `TODO.md` 直接驱动看板的使用方式。
+
+### 决策
+
+删除 `FYH/.devtool/features/` 看板数据目录及其工作区配置，今后只维护
+`TODO.md`；任务状态、优先级和分组由 TODO 文件直接提供给看板渲染。保留
+`kanban-markdown` skill 作为可选参考，不在 FYH 中创建其默认 front matter 卡片。
+
+### 备选方案
+
+- 继续维护 feature 卡片并与 TODO 双向同步：信息重复，容易漂移。
+- 继续维护独立 `KANBAN.md`：需要人工同步，且缺少单一事实源。
+
+### 理由
+
+单文件维护路径最短，任务文字、状态和看板展示保持一致；删除闲置目录和配置也能
+减少团队工作区中的个人工具设置。
+
+### 影响
+
+- 新增、认领、完成和取消任务只修改 `TODO.md`。
+- `.vscode/settings.json` 仅保留 TODO Sidebar 的 `activeFile` 配置。
+- `KANBAN.md` 和 `.devtool/features/` 不再是 FYH 工作流的组成部分。
+- `progress.md` 与 `decisions.md` 继续按各自的记录准则独立判断是否更新。
+
+### 受影响组件
+
+- `.vscode/settings.json`
+- `TODO.md`
+- `FYH/AGENTS.md`
+- `FYH/README.md`
 - `FYH/docs/agent使用技巧/kanban-markdown看板使用教程.md`
