@@ -8,6 +8,28 @@
 
 ## 工作记录
 
+### 2026-08-31 — 切换为 Obsidian Markdown 阅读工作流
+
+**状态变化**
+
+已移除个人仓库中的卡片工具配置、同步脚本、卡片目录和相关教程；TODO、项目文档、
+进度与决策记录统一回到普通 Markdown，后续以 Obsidian 作为个人文档阅读入口。
+
+**关键文件**
+
+- `TODO.md`
+- `AGENTS.md`
+- `README.md`
+- `docs/02_周行动任务.md`
+- `progress.md`
+- `decisions.md`
+
+**验证**
+
+- 已删除额外同步脚本、卡片目录和相关教程。
+- 已移除 VS Code 中的额外任务插件及本机对应 Codex skill。
+- 已检查 FYH、根目录本地规则和工作区配置，不再包含相关配置或术语。
+
 ### 2026-08-30 — 初始化个人工作记录机制
 
 **目标**
@@ -278,100 +300,27 @@ FYH 独立仓库已可独立提交、同步和回溯；个人工作机制已在�
 
 ---
 
-### 2026-08-30 — 建立 TODO 与看板工作入口
+### 2026-08-31 — 完成 Scan Insertion 项目三层任务规划
 
 **状态变化**
 
-已将个人待办与下一步集中到 `TODO.md`，并新增 `KANBAN.md` 作为可视化看板；
-`TODO.md` 顶部可直接打开看板。`progress.md` 继续只记录阶段性状态，不再承担
-待办清单职责。
-
-**验证**
-
-- `TODO.md` 已包含唯一“下一步”入口、任务 ID、优先级和验收标准。
-- `KANBAN.md` 已按状态提供下一步、进行中、阻塞、待办和已完成栏目。
-- 两个文件均使用相对链接，可在仓库内直接跳转。
-
-**当前状态**
-
-个人任务入口和阶段进度记录已分离，后续可通过看板快速识别当前工作状态。
-
-**下一阶段方向**
-
-继续围绕 DFT / Scan Insertion 规则结构化推进，并在形成阶段性结果时更新本文件。
-
----
-
-### 2026-08-30 — Kanban Markdown 看板首次可用
-
-**状态变化**
-
-VS Code 的 Kanban Markdown 扩展已完成团队根工作区配置，个人看板目录
-`FYH/.devtool/features/` 已建立；配套 `kanban-markdown` Codex skill 已安装，
-并新增中文使用教程。
-
-**关键产物**
-
-- 团队根 `.vscode/settings.json`：设置个人看板目录、默认状态/优先级和 Codex AI Agent。
-- `docs/agent使用技巧/kanban-markdown看板使用教程.md`：记录打开、建卡、拖拽、
-  文件格式、Codex 协作和故障检查方法。
-
-**验证**
-
-- `code --list-extensions` 检出 `lachyfs.kanban-markdown`。
-- 团队根 `.vscode/settings.json` 已通过 JSON 解析校验。
-- 教程包含 front matter、结构化章节和文末引用链接。
-
-**当前状态**
-
-团队根工作区下的 FYH 看板入口已具备首次使用条件；实际卡片可按后续 TODO 需要逐步创建。
-
-**下一步**
-
-在 VS Code 以团队仓库为工作区根目录执行 `Open Kanban Board`，创建并维护第一批
-个人任务卡片。
-
----
-
-### 2026-08-31 — 校正 Kanban 工作区与个人目录边界
-
-**状态变化**
-
-已明确 VS Code 工作区根目录为团队仓库 `D:\research\2026-NCTIEDA-Semitronix`，
-FYH 为其中的个人目录；Kanban 配置已移动到团队根 `.vscode/settings.json`，
-卡片数据保持在 `FYH/.devtool/features/`。
-
-**关键修正**
-
-- `kanban-markdown.featuresDirectory` 改为 `FYH/.devtool/features`。
-- 在本地 `.git/info/exclude` 忽略 `.vscode/settings.json`，避免个人配置进入团队提交。
-- 教程与 ADR-009 已同步新的工作区路径。
-
-**验证**
-
-- 根工作区设置 JSON 解析通过。
-- 已确认 FYH 内不再保留旧的 `.vscode/settings.json`。
-
----
-
-### 2026-08-31 — 切换为 TODO.md 单一看板数据源
-
-**状态变化**
-
-个人看板工作流已从 feature 卡片目录切换为直接维护 `TODO.md`；已删除空的
-`FYH/.devtool/features/` 目录，并移除团队根工作区对该目录及 Kanban Markdown 卡片
-选项的配置。`TODO.md` 现同时承担任务清单和看板渲染数据源。
+已将赛题指南、官方宣讲/Q&A口径、团队技术路线、架构、分工、DFT 学习资料和个人
+路线整合为“总项目任务书—阶段任务目标—周行动任务”三层体系，规划窗口为
+2026-08-31 至 2026-11-07。`TODO.md` 已收敛为当前两周的可执行产出任务，不再复制
+整段两个月计划。
 
 **关键文件**
 
-- `.vscode/settings.json`
+- `docs/00_总项目任务书.md`
+- `docs/01_阶段任务目标_20260831-20261107.md`
+- `docs/02_周行动任务.md`
 - `TODO.md`
-- `AGENTS.md`
-- `README.md`
-- `docs/agent使用技巧/kanban-markdown看板使用教程.md`
+- `decisions.md`（ADR-012）
 
 **验证**
 
-- 已确认 `FYH/.devtool/features/` 不存在；
-- 已确认工作区设置仅保留 `todoSidebar.activeFile: ./FYH/TODO.md` 和完成动作配置；
-- 已在 ADR-011 记录该长期工作流决策。
+- 三份文档均包含 YAML front matter、编号章节、职责边界、交付物和 Definition of Done；
+- 已覆盖任务一/任务二、Agent 闭环、模块、DFT/规则、工具环境、测试、审计、Docker、风险和最终交付；
+- 当前/下一周任务均写明资料/工具、产出、完成标准、优先级和依赖；
+- 重新检查官方指南、宣讲整理、Q&A 索引和团队文档，提交形态、路径、API、
+  `limitations.md` 等差异已保留为“待确认”。
