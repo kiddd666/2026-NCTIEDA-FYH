@@ -21,6 +21,7 @@
 | [`progress.md`](progress.md) | 阶段性项目状态 | 仅完成有意义的阶段或里程碑 |
 | [`decisions.md`](decisions.md) | 影响后续路线的 ADR | 架构、接口、工具或实验设计决策 |
 | [`TODO.md`](TODO.md) | 可执行待办清单 | 认领、完成或取消待办时 |
+| [`KANBAN.md`](KANBAN.md) | TODO 的状态看板 | 与 TODO 状态变更同步 |
 
 ## 常用检查
 

@@ -32,6 +32,8 @@ If not, do not add an entry.
 When an entry is warranted, record the date, changed project state, key files,
 validation evidence, current status, blockers, and next step. Keep the entry
 focused on the resulting state rather than an operation-by-operation log.
+`progress.md` 不承担待办清单职责；具体任务、优先级和下一步只维护在
+`TODO.md`，进度条目的“下一步”只能概括阶段方向或引用 TODO 编号。
 
 Prefer appending a new entry instead of rewriting historical entries.
 
@@ -134,6 +136,9 @@ FYH 独立仓库的工作树是：
 
 `TODO.md`（Windows 下与用户所称的 `todo.md` 为同一文件）是个人待办的唯一
 入口，记录尚未完成的可执行事项，不作为过程日志。
+
+`KANBAN.md` 是 TODO 的看板视图。通过 `TODO.md` 顶部的“打开看板”链接进入；
+TODO 是唯一事实源，新增、完成、取消任务时同步调整看板，避免两份清单漂移。
 
 - 每条待办只描述一个可验收结果，必要时附文件、命令或 issue 链接。
 - 使用 `[ ]` 待开始、`[>]` 进行中、`[x]` 已完成、`[-]` 已取消；按 `P0`–`P2`
