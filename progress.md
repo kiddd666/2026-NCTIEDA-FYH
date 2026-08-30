@@ -310,3 +310,55 @@ FYH 独立仓库已可独立提交、同步和回溯；个人工作机制已在�
 **下一阶段方向**
 
 继续围绕 DFT / Scan Insertion 规则结构化推进，并在形成阶段性结果时更新本文件。
+
+---
+
+### 2026-08-30 — Kanban Markdown 看板首次可用
+
+**状态变化**
+
+VS Code 的 Kanban Markdown 扩展已完成团队根工作区配置，个人看板目录
+`FYH/.devtool/features/` 已建立；配套 `kanban-markdown` Codex skill 已安装，
+并新增中文使用教程。
+
+**关键产物**
+
+- 团队根 `.vscode/settings.json`：设置个人看板目录、默认状态/优先级和 Codex AI Agent。
+- `docs/agent使用技巧/kanban-markdown看板使用教程.md`：记录打开、建卡、拖拽、
+  文件格式、Codex 协作和故障检查方法。
+
+**验证**
+
+- `code --list-extensions` 检出 `lachyfs.kanban-markdown`。
+- 团队根 `.vscode/settings.json` 已通过 JSON 解析校验。
+- 教程包含 front matter、结构化章节和文末引用链接。
+
+**当前状态**
+
+团队根工作区下的 FYH 看板入口已具备首次使用条件；实际卡片可按后续 TODO 需要逐步创建。
+
+**下一步**
+
+在 VS Code 以团队仓库为工作区根目录执行 `Open Kanban Board`，创建并维护第一批
+个人任务卡片。
+
+---
+
+### 2026-08-31 — 校正 Kanban 工作区与个人目录边界
+
+**状态变化**
+
+已明确 VS Code 工作区根目录为团队仓库 `D:\research\2026-NCTIEDA-Semitronix`，
+FYH 为其中的个人目录；Kanban 配置已移动到团队根 `.vscode/settings.json`，
+卡片数据保持在 `FYH/.devtool/features/`。
+
+**关键修正**
+
+- `kanban-markdown.featuresDirectory` 改为 `FYH/.devtool/features`。
+- 在本地 `.git/info/exclude` 忽略 `.vscode/settings.json`，避免个人配置进入团队提交。
+- 教程与 ADR-009 已同步新的工作区路径。
+
+**验证**
+
+- 根工作区设置 JSON 解析通过。
+- 已确认 FYH 内不再保留旧的 `.vscode/settings.json`。

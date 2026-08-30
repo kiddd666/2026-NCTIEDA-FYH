@@ -30,12 +30,12 @@ Use this test: “几天后重新打开项目，这条信息是否能帮助我�
 If not, do not add an entry.
 
 When an entry is warranted, record the date, changed project state, key files,
-validation evidence, current status, blockers, and next step. Keep the entry
-focused on the resulting state rather than an operation-by-operation log.
+validation evidence, and blockers when relevant. Do not add `当前状态` or `下一步`
+fields to new progress entries; keep the entry focused on the resulting state
+rather than an operation-by-operation log.
 `progress.md` 不承担待办清单职责；具体任务、优先级和下一步只维护在
-`TODO.md`，进度条目的“下一步”只能概括阶段方向或引用 TODO 编号。完成一个
-TODO 项并不自动触发进度记录，只有达到里程碑或形成其他明确的阶段性状态变化时
-才追加 `progress.md`。
+`TODO.md`；完成一个 TODO 项并不自动触发进度记录，只有达到里程碑或形成其他
+明确的阶段性状态变化时才追加 `progress.md`。
 
 Prefer appending a new entry instead of rewriting historical entries.
 
@@ -166,12 +166,13 @@ TODO 是唯一事实源，新增、完成、取消任务时同步调整看板，
 
 ## 7. Logging Entry Templates
 
-Progress entries should use this order: date, task/goal, work completed,
-files changed, validation, current status, blockers, and next step.
+Progress entries should use this order: date, changed project state, key files,
+validation, and blockers when relevant. Do not add current-status or next-step
+sections to new progress entries.
 
-Decision entries should use ADR fields: Context, Decision, Alternatives,
-Rationale, Consequences, and Affected Components. Keep entries append-only
-unless correcting an explicit factual error.
+Decision entries should use Chinese ADR headings: 背景、决策、备选方案、理由、
+影响、受影响组件。Keep entries append-only unless correcting an explicit factual
+error.
 
 ## 8. `FYH/docs` 文档写作与结构风格
 
