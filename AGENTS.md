@@ -33,7 +33,9 @@ When an entry is warranted, record the date, changed project state, key files,
 validation evidence, current status, blockers, and next step. Keep the entry
 focused on the resulting state rather than an operation-by-operation log.
 `progress.md` 不承担待办清单职责；具体任务、优先级和下一步只维护在
-`TODO.md`，进度条目的“下一步”只能概括阶段方向或引用 TODO 编号。
+`TODO.md`，进度条目的“下一步”只能概括阶段方向或引用 TODO 编号。完成一个
+TODO 项并不自动触发进度记录，只有达到里程碑或形成其他明确的阶段性状态变化时
+才追加 `progress.md`。
 
 Prefer appending a new entry instead of rewriting historical entries.
 
@@ -134,17 +136,18 @@ FYH 独立仓库的工作树是：
 
 ## 5. TODO 工作机制
 
-`TODO.md`（Windows 下与用户所称的 `todo.md` 为同一文件）是个人待办的唯一
-入口，记录尚未完成的可执行事项，不作为过程日志。
+`TODO.md`（Windows 下与用户所称的 `todo.md` 为同一文件）是当前活跃任务看板，
+记录少量、可执行且尚未完成的事项，不作为过程日志。
 
 `KANBAN.md` 是 TODO 的看板视图。通过 `TODO.md` 顶部的“打开看板”链接进入；
 TODO 是唯一事实源，新增、完成、取消任务时同步调整看板，避免两份清单漂移。
 
-- 每条待办只描述一个可验收结果，必要时附文件、命令或 issue 链接。
+- 每条任务只描述一个清晰结果，保持足够简短；必要时附文件、命令或 issue 链接，
+  详细拆解放到对应任务文档，不在看板堆叠步骤。
 - 使用 `[ ]` 待开始、`[>]` 进行中、`[x]` 已完成、`[-]` 已取消；按 `P0`–`P2`
   标注优先级，未标注时默认为 `P1`。
-- 完成项保留在 TODO 中并附完成日期；只有形成阶段性状态变化时，才同步追加
-  `progress.md`，不要把每次小改动复制到进度日志。
+- 处理任务时及时更新状态，确保“下一步”“进行中”“阻塞”和“已完成”准确反映当前情况。
+  完成项可保留在 TODO 中并附完成日期，但不因此自动追加 `progress.md`。
 - 会影响架构、接口、工具、实验设计或长期工作流的取舍，另行追加到
   `decisions.md`，不要用 TODO 代替 ADR。
 - 每次开始任务前只认领少量 `[>]` 项；任务结束时清理状态、补验证证据，并保持
