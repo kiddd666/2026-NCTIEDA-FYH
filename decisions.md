@@ -234,9 +234,11 @@ FYH 物理上位于团队仓库 `D:\research\2026-NCTIEDA-Semitronix\FYH`，但�
 
 ### Decision
 
-在 `FYH` 内保留独立 `.git`，以 `master` 作为首个远程分支，并将
-`origin` 指向 `https://github.com/kiddd666/2026-NCTIEDA-FYH`。FYH 的提交和
-push 只使用 FYH 仓库根目录执行；父仓库不纳入 FYH 文件。
+在 `FYH` 内保留独立 `.git`，以 `master` 作为首个远程分支，并将 `origin`
+连接到 GitHub 仓库 `https://github.com/kiddd666/2026-NCTIEDA-FYH`；当前因
+HTTPS 出站连接不稳定，实际使用 SSH transport
+`git@github.com:kiddd666/2026-NCTIEDA-FYH.git`。FYH 的提交和 push 只使用
+FYH 仓库根目录执行；父仓库不纳入 FYH 文件。
 
 ### Alternatives
 

@@ -265,7 +265,8 @@ Scan-Insertion 项目或要求引用特定资料时，才重新检查该仓库�
 - 新增 `README.md`，说明仓库边界、常用检查和四份个人工作文件的职责。
 - 完善 `AGENTS.md` 的独立 Git 边界和 TODO 使用规则。
 - 完善 `TODO.md`，定义待办状态、优先级、验收证据及与两份日志的分工。
-- 配置远程仓库 `https://github.com/kiddd666/2026-NCTIEDA-FYH`。
+- 配置远程仓库 `https://github.com/kiddd666/2026-NCTIEDA-FYH`，当前使用其
+  SSH transport `git@github.com:kiddd666/2026-NCTIEDA-FYH.git`。
 - 创建首次提交并 push 到远程 `master` 分支。
 
 **验证**
