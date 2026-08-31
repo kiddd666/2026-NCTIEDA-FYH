@@ -8,6 +8,36 @@
 
 ## 工作记录
 
+### 2026-08-31 — 完成 DFT 七层通俗学习笔记网络
+
+**状态变化**
+
+已依据《DFT 与设计知识学习地图及学习大纲》第四章 4.1～4.7，建立七份面向外行的
+分层学习笔记，覆盖数字设计、可测性、Internal Scan、时钟与 Lockup、Scan DRC
+根因、Wrapper/CTL 交付物以及工具执行与 LEC。每份笔记首行均双链回原大纲对应小节，
+正文关键判断附教材、赛题指南或标准/工具官方来源。
+
+**关键文件**
+
+- `docs/DFT与规则知识网络/01_数字设计基础.md`
+- `docs/DFT与规则知识网络/02_测试与可测性基础.md`
+- `docs/DFT与规则知识网络/03_Internal Scan核心.md`
+- `docs/DFT与规则知识网络/04_时钟边沿与Lockup.md`
+- `docs/DFT与规则知识网络/05_Scan DRC与门级根因分析.md`
+- `docs/DFT与规则知识网络/06_Wrapper Scan、CTL与交付物.md`
+- `docs/DFT与规则知识网络/07_工具执行、报告核验与LEC.md`
+- `.agents/skills/file-tree/tree.json`
+
+**验证**
+
+- `python .agents/skills/file-tree/scripts/tree_tool.py check` 通过，文件树与磁盘一致。
+- 逐份检查 7 个首行双链均能匹配原文 4.1～4.7 标题，内部 Markdown 文件链接无缺失目标。
+- 用 HTTP HEAD 验证 IEEE 1800/1500/1450 与 Yosys EQY 官方引用链接均返回 `200`。
+
+**阻塞**
+
+无。
+
 ### 2026-08-31 — 切换为 Obsidian Markdown 阅读工作流
 
 **状态变化**
