@@ -248,24 +248,44 @@ FYH/
 │           ├── SKILL.md  # 文件树技能说明
 │           └── tree.json # 文件树唯一数据源
 ├── .gitignore   # FYH仓库忽略规则
+├── .vscode/     # VS Code工作区配置
 ├── AGENTS.md    # FYH个人协作规则
 ├── decisions.md # 技术决策日志
 ├── docs/        # 个人研究与学习文档
-│   ├── agent使用技巧/ # Agent使用方法与提示词
-│   │   ├── codex使用技巧.md # Codex使用技巧
-│   │   └── prompt/      # 可复用提示词
-│   │       ├── codex with gpt.md # Codex与GPT提示词
-│   │       └── 提问.md             # 提问提示词
+│   ├── DFT与规则学习/  # DFT与规则学习资料
+│   │   ├── 00_任务理解.md.md                 # 任务理解学习笔记
+│   │   ├── 01_数字设计基础复习.md.md             # 数字设计基础复习
+│   │   ├── 02_DFT基础.md.md                # DFT基础笔记
+│   │   ├── 03_Internal Scan核心.md.md      # Internal Scan笔记
+│   │   ├── 04_时钟边沿与Lockup.md.md          # 时钟边沿与Lockup
+│   │   ├── 05_Scan DRC与门级根因分析.md.md      # Scan DRC根因分析
+│   │   ├── 06_Wrapper Scan、CTL与交付物.md.md # Wrapper与CTL交付物
+│   │   ├── 07_工具执行、报告核验与LEC.md.md        # 工具报告与LEC
+│   │   └── attachments/                  # DFT学习配图
+│   │       ├── Pasted image 20260901093205.png # DFT学习配图
+│   │       └── Pasted image 20260901094228.png # DFT学习配图
+│   ├── 参考书籍/      # DFT参考书籍
+│   │   ├── VLSI Test Principles and Architectures - Design for Testability.md # VLSI测试参考书
+│   │   ├── VLSI测试方法学和可测性设计.md                                                 # VLSI测试方法学
+│   │   └── 数字设计和计算机体系结构原书第2版.md                                               # 数字设计参考书
 │   ├── 学习笔记/      # DFT学习笔记
+│   │   ├── agent使用技巧/                   # Agent使用技巧笔记
+│   │   │   ├── codex使用技巧.md # Codex使用技巧笔记
+│   │   │   └── prompt/      # 提示词笔记
+│   │   │       ├── codex with gpt.md # Codex与GPT提示词
+│   │   │       └── 提问.md             # 提问提示词笔记
 │   │   └── VLSI_Test_Principles_Ch02.md # VLSI测试教材笔记
-│   ├── 开源资料.md.md # 开源资料整理
-│   └── 技术路线/      # 项目技术路线与任务
-│       ├── DFT与规则负责人项目学习路线.md # DFT负责人学习路线
-│       ├── DFT基础知识清单_下周日讲解.md # DFT基础知识清单
-│       ├── 任务.md              # 项目任务清单
-│       └── 当前阶段.md            # 当前阶段说明
+│   └── 技术路线与实验规划/ # 技术路线与实验规划文档
+│       ├── 00_项目核心任务.md            # 项目核心任务
+│       ├── 01_开源资料与实验.md           # 开源资料与实验
+│       ├── 02_DFT与设计知识学习地图及学习大纲.md # DFT学习地图
+│       ├── 03_DFT与设计知识学习缺口报告.md    # DFT学习缺口
+│       ├── 04_DFT与规则负责人项目学习路线.md   # DFT负责人学习路线
+│       └── 05_DFT基础知识清单_下周日讲解.md   # DFT基础知识清单
+├── experiments/ # 实验记录与产物
 ├── progress.md  # 项目进展日志
 ├── README.md    # FYH个人仓库说明
+├── scripts/     # 个人辅助脚本
 └── TODO.md      # 当前任务清单
 <!-- file-tree:tree:end -->
 ```

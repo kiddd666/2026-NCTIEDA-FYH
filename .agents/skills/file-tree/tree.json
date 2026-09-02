@@ -73,6 +73,11 @@
         "忽略Python缓存等本地生成文件"
       ]
     },
+    ".vscode": {
+      "kind": "dir",
+      "desc": "VS Code工作区配置",
+      "children": {}
+    },
     "AGENTS.md": {
       "kind": "file",
       "desc": "FYH个人协作规则",
@@ -91,36 +96,112 @@
       "kind": "dir",
       "desc": "个人研究与学习文档",
       "children": {
-        "agent使用技巧": {
+        "DFT与规则学习": {
           "kind": "dir",
-          "desc": "Agent使用方法与提示词",
+          "desc": "DFT与规则学习资料",
           "children": {
-            "codex使用技巧.md": {
+            "00_任务理解.md.md": {
               "kind": "file",
-              "desc": "Codex使用技巧",
+              "desc": "任务理解学习笔记",
               "detail": [
-                "Codex协作与操作经验总结"
+                "Scan Insertion任务理解与边界笔记"
               ]
             },
-            "prompt": {
+            "01_数字设计基础复习.md.md": {
+              "kind": "file",
+              "desc": "数字设计基础复习",
+              "detail": [
+                "数字逻辑与门级设计基础笔记"
+              ]
+            },
+            "02_DFT基础.md.md": {
+              "kind": "file",
+              "desc": "DFT基础笔记",
+              "detail": [
+                "可测性设计基础概念与方法"
+              ]
+            },
+            "03_Internal Scan核心.md.md": {
+              "kind": "file",
+              "desc": "Internal Scan笔记",
+              "detail": [
+                "Internal Scan结构与流程学习笔记"
+              ]
+            },
+            "04_时钟边沿与Lockup.md.md": {
+              "kind": "file",
+              "desc": "时钟边沿与Lockup",
+              "detail": [
+                "扫描时钟与Lockup锁存器笔记"
+              ]
+            },
+            "05_Scan DRC与门级根因分析.md.md": {
+              "kind": "file",
+              "desc": "Scan DRC根因分析",
+              "detail": [
+                "扫描设计规则检查与门级问题分析"
+              ]
+            },
+            "06_Wrapper Scan、CTL与交付物.md.md": {
+              "kind": "file",
+              "desc": "Wrapper与CTL交付物",
+              "detail": [
+                "Wrapper Scan、CTL及交付文件笔记"
+              ]
+            },
+            "07_工具执行、报告核验与LEC.md.md": {
+              "kind": "file",
+              "desc": "工具报告与LEC",
+              "detail": [
+                "工具执行、报告核验与等价性检查"
+              ]
+            },
+            "attachments": {
               "kind": "dir",
-              "desc": "可复用提示词",
+              "desc": "DFT学习配图",
               "children": {
-                "codex with gpt.md": {
+                "Pasted image 20260901093205.png": {
                   "kind": "file",
-                  "desc": "Codex与GPT提示词",
+                  "desc": "DFT学习配图",
                   "detail": [
-                    "Codex与GPT协作提示词记录"
+                    "DFT基础学习笔记配图"
                   ]
                 },
-                "提问.md": {
+                "Pasted image 20260901094228.png": {
                   "kind": "file",
-                  "desc": "提问提示词",
+                  "desc": "DFT学习配图",
                   "detail": [
-                    "与Agent协作时的提问模板"
+                    "DFT基础学习笔记配图"
                   ]
                 }
               }
+            }
+          }
+        },
+        "参考书籍": {
+          "kind": "dir",
+          "desc": "DFT参考书籍",
+          "children": {
+            "VLSI Test Principles and Architectures - Design for Testability.md": {
+              "kind": "file",
+              "desc": "VLSI测试参考书",
+              "detail": [
+                "VLSI测试原理与可测性设计教材"
+              ]
+            },
+            "VLSI测试方法学和可测性设计.md": {
+              "kind": "file",
+              "desc": "VLSI测试方法学",
+              "detail": [
+                "VLSI测试方法学与可测性设计教材"
+              ]
+            },
+            "数字设计和计算机体系结构原书第2版.md": {
+              "kind": "file",
+              "desc": "数字设计参考书",
+              "detail": [
+                "数字设计与计算机体系结构教材"
+              ]
             }
           }
         },
@@ -128,6 +209,39 @@
           "kind": "dir",
           "desc": "DFT学习笔记",
           "children": {
+            "agent使用技巧": {
+              "kind": "dir",
+              "desc": "Agent使用技巧笔记",
+              "children": {
+                "codex使用技巧.md": {
+                  "kind": "file",
+                  "desc": "Codex使用技巧笔记",
+                  "detail": [
+                    "Codex协作与操作经验笔记"
+                  ]
+                },
+                "prompt": {
+                  "kind": "dir",
+                  "desc": "提示词笔记",
+                  "children": {
+                    "codex with gpt.md": {
+                      "kind": "file",
+                      "desc": "Codex与GPT提示词",
+                      "detail": [
+                        "Codex与GPT协作提示词记录"
+                      ]
+                    },
+                    "提问.md": {
+                      "kind": "file",
+                      "desc": "提问提示词笔记",
+                      "detail": [
+                        "与Agent协作的提问模板"
+                      ]
+                    }
+                  }
+                }
+              }
+            },
             "VLSI_Test_Principles_Ch02.md": {
               "kind": "file",
               "desc": "VLSI测试教材笔记",
@@ -137,48 +251,60 @@
             }
           }
         },
-        "开源资料.md.md": {
-          "kind": "file",
-          "desc": "开源资料整理",
-          "detail": [
-            "项目相关开源资料与链接整理"
-          ]
-        },
-        "技术路线": {
+        "技术路线与实验规划": {
           "kind": "dir",
-          "desc": "项目技术路线与任务",
+          "desc": "技术路线与实验规划文档",
           "children": {
-            "DFT与规则负责人项目学习路线.md": {
+            "00_项目核心任务.md": {
+              "kind": "file",
+              "desc": "项目核心任务",
+              "detail": [
+                "项目目标、边界与核心任务"
+              ]
+            },
+            "01_开源资料与实验.md": {
+              "kind": "file",
+              "desc": "开源资料与实验",
+              "detail": [
+                "开源资料整理与实验规划"
+              ]
+            },
+            "02_DFT与设计知识学习地图及学习大纲.md": {
+              "kind": "file",
+              "desc": "DFT学习地图",
+              "detail": [
+                "DFT与设计知识学习地图及大纲"
+              ]
+            },
+            "03_DFT与设计知识学习缺口报告.md": {
+              "kind": "file",
+              "desc": "DFT学习缺口",
+              "detail": [
+                "DFT与设计知识学习缺口分析"
+              ]
+            },
+            "04_DFT与规则负责人项目学习路线.md": {
               "kind": "file",
               "desc": "DFT负责人学习路线",
               "detail": [
                 "DFT与规则负责人项目学习路线"
               ]
             },
-            "DFT基础知识清单_下周日讲解.md": {
+            "05_DFT基础知识清单_下周日讲解.md": {
               "kind": "file",
               "desc": "DFT基础知识清单",
               "detail": [
-                "DFT基础知识学习与讲解清单"
-              ]
-            },
-            "任务.md": {
-              "kind": "file",
-              "desc": "项目任务清单",
-              "detail": [
-                "技术路线下的任务分解与要求"
-              ]
-            },
-            "当前阶段.md": {
-              "kind": "file",
-              "desc": "当前阶段说明",
-              "detail": [
-                "项目当前阶段与工作重点"
+                "DFT基础知识讲解准备清单"
               ]
             }
           }
         }
       }
+    },
+    "experiments": {
+      "kind": "dir",
+      "desc": "实验记录与产物",
+      "children": {}
     },
     "progress.md": {
       "kind": "file",
@@ -193,6 +319,11 @@
       "detail": [
         "个人仓库定位、目录与使用说明"
       ]
+    },
+    "scripts": {
+      "kind": "dir",
+      "desc": "个人辅助脚本",
+      "children": {}
     },
     "TODO.md": {
       "kind": "file",

@@ -390,3 +390,44 @@ FYH 独立仓库已可独立提交、同步和回溯；个人工作机制已在�
 - 已检查行内公式定界符和 Mermaid 图示语法；
 - 原始教材 `学习材料/DFT补强/VLSI Test Principles and Architectures - Design for Testability.md` 未修改；
 - 文件已通过 file-tree 工具登记。
+
+---
+
+### 2026-09-02 — 建立 FYH 独立文件树
+
+**状态变化**
+
+FYH 已建立独立的文件树维护能力，Agent 可通过 `tree.json` 查询文件职责、通过
+`AGENTS.md` 的简版树快速定位目录与文件。
+
+**关键文件**
+
+- `.agents/skills/file-tree/tree.json`
+- `.agents/skills/file-tree/scripts/tree_tool.py`
+- `AGENTS.md`
+
+**验证**
+
+- 已登记当前 FYH 仓库的目录与文件条目；
+- `python .agents/skills/file-tree/scripts/tree_tool.py check --strict` 通过；
+- 文件树技能文件位于 FYH 独立仓库，未纳入父项目变更统计。
+
+---
+
+### 2026-09-02 — 同步 FYH 目录重组到文件树
+
+**状态变化**
+
+已将 FYH 最近的目录重组同步到文件树：新增 `docs/DFT与规则学习`、`docs/参考书籍`
+和 `docs/技术路线与实验规划` 三个资料区，并移除已不存在的旧路径条目。
+
+**关键文件**
+
+- `.agents/skills/file-tree/tree.json`
+- `AGENTS.md`
+
+**验证**
+
+- 文件树已登记当前磁盘上的新目录与文件；
+- 已运行 `python .agents/skills/file-tree/scripts/tree_tool.py render`；
+- 保留 FYH 工作树中原有的删除、新增和未暂存状态，未操作父仓库。
