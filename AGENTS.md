@@ -217,3 +217,62 @@ error.
 该风格是 `FYH/docs` 的默认约定，不覆盖团队根目录 `AGENTS.md`、官方文档
 格式或工具生成文件的既定格式。若新文档属于实验记录、会议实录或其他不适合
 编号的文体，应保留上述“结论—依据—验证”的清晰性并按内容自然组织。
+
+## 文件树维护
+
+`.agents/skills/file-tree/tree.json` 是 FYH 文件树的唯一数据源；使用同目录
+脚本维护条目并渲染本文件中的树块。常用命令：
+
+```bash
+python .agents/skills/file-tree/scripts/tree_tool.py query --kw 关键词
+python .agents/skills/file-tree/scripts/tree_tool.py get docs/技术路线/任务.md
+python .agents/skills/file-tree/scripts/tree_tool.py check --strict
+```
+
+新增、删除或移动文件时，先用 `add`、`rm`、`mv`（或对应批量命令）更新
+`tree.json`，不要直接手改树块；完成后运行 `check --strict`。
+
+## 文件树（简版速览）
+
+```
+<!-- file-tree:tree:begin 由脚本渲染，禁止手改 -->
+FYH/
+├── .agents/     # Agent技能配置目录
+│   └── skills/ # 本仓库使用的Agent技能
+│       └── file-tree/ # 文件树维护技能
+│           ├── agents/   # 技能平台元数据
+│           │   └── openai.yaml # 技能界面元数据
+│           ├── scripts/  # 文件树维护脚本
+│           │   ├── tree_tool.py      # 文件树维护工具
+│           │   └── tree_tool_test.py # 文件树契约测试
+│           ├── SKILL.md  # 文件树技能说明
+│           └── tree.json # 文件树唯一数据源
+├── .gitignore   # FYH仓库忽略规则
+├── AGENTS.md    # FYH个人协作规则
+├── decisions.md # 技术决策日志
+├── docs/        # 个人研究与学习文档
+│   ├── agent使用技巧/ # Agent使用方法与提示词
+│   │   ├── codex使用技巧.md # Codex使用技巧
+│   │   └── prompt/      # 可复用提示词
+│   │       ├── codex with gpt.md # Codex与GPT提示词
+│   │       └── 提问.md             # 提问提示词
+│   ├── 学习笔记/      # DFT学习笔记
+│   │   └── VLSI_Test_Principles_Ch02.md # VLSI测试教材笔记
+│   ├── 开源资料.md.md # 开源资料整理
+│   └── 技术路线/      # 项目技术路线与任务
+│       ├── DFT与规则负责人项目学习路线.md # DFT负责人学习路线
+│       ├── DFT基础知识清单_下周日讲解.md # DFT基础知识清单
+│       ├── 任务.md              # 项目任务清单
+│       └── 当前阶段.md            # 当前阶段说明
+├── progress.md  # 项目进展日志
+├── README.md    # FYH个人仓库说明
+└── TODO.md      # 当前任务清单
+<!-- file-tree:tree:end -->
+```
+
+## 文件树标签词表
+
+<!-- file-tree:tags:begin 由脚本渲染，禁止手改 -->
+| 标签 | 说明 |
+| --- | --- |
+<!-- file-tree:tags:end -->

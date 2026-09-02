@@ -1,0 +1,205 @@
+{
+  "root": "FYH",
+  "tree": {
+    ".agents": {
+      "kind": "dir",
+      "desc": "Agent技能配置目录",
+      "children": {
+        "skills": {
+          "kind": "dir",
+          "desc": "本仓库使用的Agent技能",
+          "children": {
+            "file-tree": {
+              "kind": "dir",
+              "desc": "文件树维护技能",
+              "children": {
+                "agents": {
+                  "kind": "dir",
+                  "desc": "技能平台元数据",
+                  "children": {
+                    "openai.yaml": {
+                      "kind": "file",
+                      "desc": "技能界面元数据",
+                      "detail": [
+                        "文件树技能在Agent平台中的元数据"
+                      ]
+                    }
+                  }
+                },
+                "scripts": {
+                  "kind": "dir",
+                  "desc": "文件树维护脚本",
+                  "children": {
+                    "tree_tool.py": {
+                      "kind": "file",
+                      "desc": "文件树维护工具",
+                      "detail": [
+                        "维护tree.json并渲染AGENTS.md的脚本"
+                      ]
+                    },
+                    "tree_tool_test.py": {
+                      "kind": "file",
+                      "desc": "文件树契约测试",
+                      "detail": [
+                        "验证文件树维护工具行为的测试"
+                      ]
+                    }
+                  }
+                },
+                "SKILL.md": {
+                  "kind": "file",
+                  "desc": "文件树技能说明",
+                  "detail": [
+                    "文件树数据源、命令与维护约定"
+                  ]
+                },
+                "tree.json": {
+                  "kind": "file",
+                  "desc": "文件树唯一数据源",
+                  "detail": [
+                    "记录FYH仓库目录、文件职责与关联关系"
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    ".gitignore": {
+      "kind": "file",
+      "desc": "FYH仓库忽略规则",
+      "detail": [
+        "忽略Python缓存等本地生成文件"
+      ]
+    },
+    "AGENTS.md": {
+      "kind": "file",
+      "desc": "FYH个人协作规则",
+      "detail": [
+        "FYH个人仓库的工作约定与日志规范"
+      ]
+    },
+    "decisions.md": {
+      "kind": "file",
+      "desc": "技术决策日志",
+      "detail": [
+        "记录重要的长期技术决策"
+      ]
+    },
+    "docs": {
+      "kind": "dir",
+      "desc": "个人研究与学习文档",
+      "children": {
+        "agent使用技巧": {
+          "kind": "dir",
+          "desc": "Agent使用方法与提示词",
+          "children": {
+            "codex使用技巧.md": {
+              "kind": "file",
+              "desc": "Codex使用技巧",
+              "detail": [
+                "Codex协作与操作经验总结"
+              ]
+            },
+            "prompt": {
+              "kind": "dir",
+              "desc": "可复用提示词",
+              "children": {
+                "codex with gpt.md": {
+                  "kind": "file",
+                  "desc": "Codex与GPT提示词",
+                  "detail": [
+                    "Codex与GPT协作提示词记录"
+                  ]
+                },
+                "提问.md": {
+                  "kind": "file",
+                  "desc": "提问提示词",
+                  "detail": [
+                    "与Agent协作时的提问模板"
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "学习笔记": {
+          "kind": "dir",
+          "desc": "DFT学习笔记",
+          "children": {
+            "VLSI_Test_Principles_Ch02.md": {
+              "kind": "file",
+              "desc": "VLSI测试教材笔记",
+              "detail": [
+                "VLSI测试原理第二章学习笔记"
+              ]
+            }
+          }
+        },
+        "开源资料.md.md": {
+          "kind": "file",
+          "desc": "开源资料整理",
+          "detail": [
+            "项目相关开源资料与链接整理"
+          ]
+        },
+        "技术路线": {
+          "kind": "dir",
+          "desc": "项目技术路线与任务",
+          "children": {
+            "DFT与规则负责人项目学习路线.md": {
+              "kind": "file",
+              "desc": "DFT负责人学习路线",
+              "detail": [
+                "DFT与规则负责人项目学习路线"
+              ]
+            },
+            "DFT基础知识清单_下周日讲解.md": {
+              "kind": "file",
+              "desc": "DFT基础知识清单",
+              "detail": [
+                "DFT基础知识学习与讲解清单"
+              ]
+            },
+            "任务.md": {
+              "kind": "file",
+              "desc": "项目任务清单",
+              "detail": [
+                "技术路线下的任务分解与要求"
+              ]
+            },
+            "当前阶段.md": {
+              "kind": "file",
+              "desc": "当前阶段说明",
+              "detail": [
+                "项目当前阶段与工作重点"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "progress.md": {
+      "kind": "file",
+      "desc": "项目进展日志",
+      "detail": [
+        "记录阶段性项目状态变化"
+      ]
+    },
+    "README.md": {
+      "kind": "file",
+      "desc": "FYH个人仓库说明",
+      "detail": [
+        "个人仓库定位、目录与使用说明"
+      ]
+    },
+    "TODO.md": {
+      "kind": "file",
+      "desc": "当前任务清单",
+      "detail": [
+        "记录可执行的个人待办事项"
+      ]
+    }
+  }
+}

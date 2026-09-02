@@ -371,3 +371,22 @@ FYH 独立仓库已可独立提交、同步和回溯；个人工作机制已在�
 
 - 文档包含 YAML front matter、编号章节、优先级表、自测清单和本地参考资料链接。
 - 明确区分通用原理、比赛语义、工具手册待确认项，以及任务一/任务二的网表修改边界。
+
+---
+
+### 2026-09-02 — 完成 Chapter 2 DFT 系统学习笔记
+
+**状态变化**
+
+已完成《VLSI Test Principles and Architectures: Design for Testability》Chapter 2 的中文结构化整理，覆盖可测性分析、SCOAP、Ad Hoc/Structured DFT、扫描单元与扫描架构、扫描规则、扫描设计流程、特殊用途扫描和 RTL DFT，并补充了面向 Scan Insertion 比赛的工程联系、掌握分级与实验建议。
+
+**关键文件**
+
+- `docs/学习笔记/VLSI_Test_Principles_Ch02.md`
+
+**验证**
+
+- 笔记按 Chapter/Section 层级组织，公式使用 Obsidian 可渲染的块公式；
+- 已检查行内公式定界符和 Mermaid 图示语法；
+- 原始教材 `学习材料/DFT补强/VLSI Test Principles and Architectures - Design for Testability.md` 未修改；
+- 文件已通过 file-tree 工具登记。
