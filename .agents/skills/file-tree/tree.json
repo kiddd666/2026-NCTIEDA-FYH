@@ -296,6 +296,19 @@
               "detail": [
                 "DFT基础知识讲解准备清单"
               ]
+            },
+            "06": {
+              "kind": "dir",
+              "desc": "9月2日至5日前置实验方案",
+              "children": {
+                "_9.2学习计划与实验方案.md": {
+                  "kind": "file",
+                  "desc": "9月2日至5日学习与前置实验方案",
+                  "detail": [
+                    "基于现有 DFT 学习进度与 Scan-Insertion 前置实验制定的四天计划，覆盖 Wrapper、网表/Liberty、手工 Scan、Lockup、EQY 与模拟赛题闭环。"
+                  ]
+                }
+              }
             }
           }
         }

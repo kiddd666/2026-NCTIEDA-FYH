@@ -431,3 +431,28 @@ FYH 已建立独立的文件树维护能力，Agent 可通过 `tree.json` 查询
 - 文件树已登记当前磁盘上的新目录与文件；
 - 已运行 `python .agents/skills/file-tree/scripts/tree_tool.py render`；
 - 保留 FYH 工作树中原有的删除、新增和未暂存状态，未操作父仓库。
+
+---
+
+### 2026-09-02 — 形成四天 Scan Insertion 前置学习与实验方案
+
+**状态变化**
+
+已结合当前 Verilog/HDLBits、DFT 教材 Chapter 1 与 2.1～2.7 的学习进度，
+以及既有 Scan DFF、4-bit Scan Chain、`s27` 网表实验，形成 2026-09-02 至
+2026-09-05 的四天学习与实验方案。方案将约 70% 时间用于实验，主线依次覆盖
+Wrapper/CTL、门级网表与 Liberty 联合分析、手工 Scan/多时钟 Lockup、EQY 三态
+与模拟赛题闭环；明确在 Public Case 和广立微手册到位前不虚构工具命令。
+
+**关键文件**
+
+- `docs/技术路线与实验规划/06/_9.2学习计划与实验方案.md`
+- `.agents/skills/file-tree/tree.json`
+- `C:\Users\27841\.claude\accelerated-learning\dft-design-knowledge\graph.json`
+
+**验证**
+
+- 已检查方案中的本地文件链接均可解析；
+- 已运行 FYH 文件树 `check --strict` 并通过；
+- 已更新 DFT/Scan Insertion 学习图谱的当前节点与已知实验状态；
+- 尚未在 `FYH/experiments` 创建环境或执行实验，符合用户“待确认后开展”的边界。
