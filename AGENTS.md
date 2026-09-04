@@ -5,110 +5,6 @@
 [`kiddd666/2026-NCTIEDA-FYH`](https://github.com/kiddd666/2026-NCTIEDA-FYH)。
 文件位置上的嵌套不代表 Git 历史、提交或 push 共用。
 
-## 1. Persistent Progress Tracking
-
-`progress.md` is the persistent record of FYH's personal project progress.
-
-```rust
-A task does NOT automatically require a progress entry.
-Before finishing, evaluate whether the work materially changed the project's persistent state.
-If yes, update progress.md; otherwise do not.
-```
-
-Update `D:\research\2026-NCTIEDA-Semitronix\FYH\progress.md` only for a
-stage-level project state change: a task or subtask reaching stable usable
-status, a capability becoming usable for the first time, a concluded important
-experiment, a milestone, an important blocker appearing or being resolved, a
-clear technical-route change, a recovery checkpoint after extended work, or an
-explicit request to record.
-
-Do not record individual file edits, small bug fixes, ordinary debugging,
-tests, refactors, or formatting changes. Merge multiple changes serving the
-same goal into one progress entry.
-
-Use this test: “几天后重新打开项目，这条信息是否能帮助我快速知道项目做到哪了？”
-If not, do not add an entry.
-
-When an entry is warranted, record the date, changed project state, key files,
-validation evidence, and blockers when relevant. Do not add `当前状态` or `下一步`
-fields to new progress entries; keep the entry focused on the resulting state
-rather than an operation-by-operation log.
-`progress.md` 不承担待办清单职责；具体任务、优先级和下一步只维护在
-`TODO.md`；完成一个 TODO 项并不自动触发进度记录，只有达到里程碑或形成其他
-明确的阶段性状态变化时才追加 `progress.md`。
-
-Prefer appending a new entry instead of rewriting historical entries.
-
-Do not remove previous progress history unless explicitly requested.
-
-All entries in `progress.md` must be written in Chinese. Keep file paths,
-commands, identifiers, and other code literals in their original form when
-needed for accuracy.
-
----
-
-## 2. Technical Decision Tracking
-
-`decisions.md` is the persistent record of important project-level technical decisions.
-
-Whenever the task results in an important technical decision, update:
-
-`D:\research\2026-NCTIEDA-Semitronix\FYH\decisions.md`
-
-Examples of important decisions include:
-
-- system architecture
-- Agent architecture
-- DFT / Scan Insertion rule interpretation
-- data schema or interface design
-- module boundaries
-- tool selection
-- workflow design
-- file/directory conventions
-- report parsing strategy
-- netlist analysis strategy
-- testing strategy
-- important implementation tradeoffs
-- decisions that affect other future tasks or team members
-
-Do NOT record trivial implementation details, temporary debugging attempts,
-formatting changes, or routine bug fixes unless they have long-term consequences.
-
-Each decision should record:
-
-- date
-- decision title
-- context / problem
-- decision
-- alternatives considered, when relevant
-- rationale
-- consequences / tradeoffs
-- affected modules or files
-
-Prefer appending new decisions instead of rewriting history.
-
-All entries in `decisions.md` must be written in Chinese. Keep technical
-identifiers, commands, schema names, and file paths in their original form
-when needed for accuracy.
-
----
-
-## 3. Definition of Done
-
-Before finishing a task:
-
-1. Complete the requested work, inspect the resulting diff, and run
-   proportionate validation.
-2. Decide: **是否形成阶段性状态变化？** 只有“是”才更新 `progress.md`。
-3. Decide: **是否形成重要长期技术决策？** 只有“是”才更新 `decisions.md`。
-4. In the final response, report what was completed, how it was validated,
-   and whether each log was updated or not needed.
-
-Neither log is mandatory for every task; completion depends on the work itself
-and on making the two explicit evaluations above.
-
----
-
 ## 4. Git 边界与团队仓库关系
 
 团队仓库是：
@@ -134,24 +30,6 @@ FYH 独立仓库的工作树是：
 
 ---
 
-## 5. TODO 工作机制
-
-`TODO.md`（Windows 下与用户所称的 `todo.md` 为同一文件）是当前活跃任务清单，
-记录少量、可执行且尚未完成的事项，不作为过程日志。
-
-- 每条任务只描述一个清晰结果，保持足够简短；必要时附文件、命令或 issue 链接，
-  详细拆解放到对应任务文档，不在清单中堆叠步骤。
-- 使用 `[ ]` 待开始、`[>]` 进行中、`[x]` 已完成、`[-]` 已取消；按 `P0`–`P2`
-  标注优先级，未标注时默认为 `P1`。
-- 处理任务时直接更新 `TODO.md` 状态，确保任务分组准确反映当前情况。
-  完成项可保留在 TODO 中并附完成日期，但不因此自动追加 `progress.md`。
-- 会影响架构、接口、工具、实验设计或长期工作流的取舍，另行追加到
-  `decisions.md`，不要用 TODO 代替 ADR。
-- 每次开始任务前只认领少量 `[>]` 项；任务结束时清理状态、补验证证据，并保持
-  清单能反映下一步可执行工作。
-
----
-
 ## 6. Related Personal Repository (暂停维护)
 
 `D:\research\Scan-Insertion` 当前项目已暂停，不属于 FYH 的主动维护范围。
@@ -160,16 +38,6 @@ FYH 独立仓库的工作树是：
 - 不主动读取或修改该仓库的文件，也不把它纳入当前任务的验证范围。
 - 只有在用户明确恢复该项目或要求引用其中的特定资料时，才重新检查其
   `AGENTS.md` 和相关文件，并按当时明确的范围执行。
-
-## 7. Logging Entry Templates
-
-Progress entries should use this order: date, changed project state, key files,
-validation, and blockers when relevant. Do not add current-status or next-step
-sections to new progress entries.
-
-Decision entries should use Chinese ADR headings: 背景、决策、备选方案、理由、
-影响、受影响组件。Keep entries append-only unless correcting an explicit factual
-error.
 
 ## 8. `FYH/docs` 文档写作与结构风格
 
@@ -261,9 +129,33 @@ FYH/
 │   │   ├── 05_Scan DRC与门级根因分析.md.md      # Scan DRC根因分析
 │   │   ├── 06_Wrapper Scan、CTL与交付物.md.md # Wrapper与CTL交付物
 │   │   ├── 07_工具执行、报告核验与LEC.md.md        # 工具报告与LEC
-│   │   └── attachments/                  # DFT学习配图
-│   │       ├── Pasted image 20260901093205.png # DFT学习配图
-│   │       └── Pasted image 20260901094228.png # DFT学习配图
+│   │   ├── attachments/                  # DFT学习配图
+│   │   │   ├── Pasted image 20260901093205.png # DFT学习配图
+│   │   │   └── Pasted image 20260901094228.png # DFT学习配图
+│   │   ├── 第一周成果交付/                      # 第一周网表读图交付
+│   │   │   ├── 00_第一周成果交付说明.md              # 第一周交付总览与标准
+│   │   │   ├── 01_读图讲义.md                   # 门级网表读图讲义
+│   │   │   ├── 02_week1_reference_netlist.v # 第一周唯一参考网表
+│   │   │   ├── 03_独立测验.md                   # 第一周独立测验
+│   │   │   ├── 04_参考答案与逐线讲解.md              # 参考答案与逐线讲解
+│   │   │   ├── 05_交叉复核表.md                  # 第一周交叉复核表
+│   │   │   ├── D1_赛题能力清单与术语表.md             # 赛题能力清单与术语表
+│   │   │   ├── D2_组合逻辑速查表.md                # 组合逻辑速查表
+│   │   │   ├── D3_时序单元对照表.md                # 时序单元对照表
+│   │   │   ├── D4_结构化门级网表及标注.md             # 结构化网表及标注
+│   │   │   └── D5_Scan原理图与第一周测验.md          # Scan原理图与第一周测验
+│   │   └── 第二周成果交付/                      # 第二周Scan交付包
+│   │       ├── 00_第二周成果交付说明.md                         # 第二周交付总览
+│   │       ├── 01_第二周练习讲义与单元契约.md                      # 练习讲义与单元契约
+│   │       ├── 02_week2_dual_clock_reference_netlist.v # 第二周唯一练习网表
+│   │       ├── 03_独立练习与测验.md                           # 第二周独立测验
+│   │       ├── 04_参考答案与逐线讲解.md                         # 第二周参考答案
+│   │       ├── 05_交叉复核表.md                             # 第二周交叉复核表
+│   │       ├── D10_双时钟手工插链案例.md                        # 双时钟手工插链案例
+│   │       ├── D6_三类ScanCell对照表.md                     # 三类ScanCell对照表
+│   │       ├── D7_Full与PartialScan对照及手工插链.md           # FullPartialScan与手工插链
+│   │       ├── D8_通用DRC根因表.md                          # 通用DRC根因表
+│   │       └── D9_Scan流程卡片.md                          # Scan流程卡片
 │   ├── 参考书籍/      # DFT参考书籍
 │   │   ├── VLSI Test Principles and Architectures - Design for Testability.md # VLSI测试参考书
 │   │   ├── VLSI测试方法学和可测性设计.md                                                 # VLSI测试方法学
@@ -282,9 +174,19 @@ FYH/
 │       ├── 03_DFT与设计知识学习缺口报告.md    # DFT学习缺口
 │       ├── 04_DFT与规则负责人项目学习路线.md   # DFT负责人学习路线
 │       ├── 05_DFT基础知识清单_下周日讲解.md   # DFT基础知识清单
-│       └── 06/                     # 9月2日至5日前置实验方案
-│           └── _9.2学习计划与实验方案.md # 9月2日至5日学习与前置实验方案
+│       └── 06_9.2学习计划与实验方案.md      # 9月2日至5日学习与前置实验方案
 ├── experiments/ # 实验记录与产物
+│   └── E05_tiny_core_scan/ # tiny_core 扫描实验
+│       ├── build/              # 实验生成物
+│       │   ├── tiny_core_scan.json    # 综合结构 JSON
+│       │   ├── tiny_core_scan_synth.v # 综合后 Verilog 网表
+│       │   ├── wave.vcd               # 扫描实验波形
+│       │   └── yosys.log              # Yosys 综合日志
+│       ├── scripts/            # 实验脚本
+│       │   └── synth.ys # Yosys 综合脚本
+│       ├── tiny_core_prescan.v # 扫描前 tiny_core 设计
+│       ├── tiny_core_scan.v    # 插入扫描链的 tiny_core
+│       └── tiny_core_scan_tb.v # 扫描链测试平台
 ├── progress.md  # 项目进展日志
 ├── README.md    # FYH个人仓库说明
 ├── scripts/     # 个人辅助脚本
