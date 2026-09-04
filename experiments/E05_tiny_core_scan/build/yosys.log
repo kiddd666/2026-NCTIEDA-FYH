@@ -1,0 +1,174 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.68+136 (git sha1 c30457480-dirty, Release, GNU /usr/bin/x86_64-w64-mingw32-g++ 15.2.1)
+
+-- Executing script file `scripts\synth.ys' --
+
+1. Executing Verilog-2005 frontend: tiny_core_scan.v
+Parsing Verilog input from `tiny_core_scan.v' to AST representation.
+Generating RTLIL representation for module `\tiny_core_scan'.
+Successfully finished Verilog frontend.
+
+2. Executing HIERARCHY pass (managing design hierarchy).
+
+2.1. Analyzing design hierarchy..
+Top module:  \tiny_core_scan
+
+2.2. Analyzing design hierarchy..
+Top module:  \tiny_core_scan
+Removed 0 unused modules.
+
+3. Executing PROC pass (convert processes to netlists).
+
+3.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+3.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Marked 2 switch rules as full_case in process $proc$tiny_core_scan.v:42$5 in module tiny_core_scan.
+Removed a total of 0 dead cases.
+
+3.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 1 redundant assignment.
+Promoted 0 assignments to connections.
+
+3.4. Executing PROC_INIT pass (extract init attributes).
+
+3.5. Executing PROC_ARST pass (detect async resets in processes).
+Found async reset \rst_n in `\tiny_core_scan.$proc$tiny_core_scan.v:42$5'.
+
+3.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+<suppressed ~1 debug messages>
+
+3.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `\tiny_core_scan.$proc$tiny_core_scan.v:42$5'.
+     1/4: $0\q[3:0] [3]
+     2/4: $0\q[3:0] [2]
+     3/4: $0\q[3:0] [1]
+     4/4: $0\q[3:0] [0]
+
+3.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+
+3.9. Executing PROC_DFF pass (convert process syncs to FFs).
+Creating register for signal `\tiny_core_scan.\q' using process `\tiny_core_scan.$proc$tiny_core_scan.v:42$5'.
+  created $adff cell `$procdff$24' with positive edge clock and positive level reset.
+
+3.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+3.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Found and cleaned up 1 empty switch in `\tiny_core_scan.$proc$tiny_core_scan.v:42$5'.
+Removing empty process `tiny_core_scan.$proc$tiny_core_scan.v:42$5'.
+Cleaned up 1 empty switch.
+
+3.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module tiny_core_scan.
+<suppressed ~2 debug messages>
+
+4. Executing OPT pass (performing simple optimizations).
+
+4.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module tiny_core_scan.
+
+4.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\tiny_core_scan'.
+Computing hashes of 12 cells of `\tiny_core_scan'.
+Finding duplicate cells in `\tiny_core_scan'.
+Removed a total of 0 cells.
+
+4.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \tiny_core_scan..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~8 debug messages>
+
+4.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \tiny_core_scan.
+Performed a total of 0 changes.
+
+4.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\tiny_core_scan'.
+Computing hashes of 12 cells of `\tiny_core_scan'.
+Finding duplicate cells in `\tiny_core_scan'.
+Removed a total of 0 cells.
+
+4.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+4.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \tiny_core_scan..
+Removed 2 unused cells and 16 unused wires.
+<suppressed ~3 debug messages>
+
+4.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module tiny_core_scan.
+
+4.9. Rerunning OPT passes. (Maybe there is more to do..)
+
+4.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \tiny_core_scan..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~8 debug messages>
+
+4.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \tiny_core_scan.
+Performed a total of 0 changes.
+
+4.12. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\tiny_core_scan'.
+Computing hashes of 10 cells of `\tiny_core_scan'.
+Finding duplicate cells in `\tiny_core_scan'.
+Removed a total of 0 cells.
+
+4.13. Executing OPT_DFF pass (perform DFF optimizations).
+
+4.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \tiny_core_scan..
+
+4.15. Executing OPT_EXPR pass (perform const folding).
+Optimizing module tiny_core_scan.
+
+4.16. Finished fast OPT passes. (There is nothing left to do.)
+
+5. Executing CHECK pass (checking for obvious problems).
+Checking module tiny_core_scan...
+Found and reported 0 problems.
+
+6. Printing statistics.
+
+=== tiny_core_scan ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       15 wires
+       21 wire bits
+       14 public wires
+       17 public wire bits
+        9 ports
+        9 port bits
+       10 cells
+        1   $adff
+        1   $and
+        4   $mux
+        1   $or
+        3   $xor
+
+7. Executing Verilog backend.
+
+7.1. Executing BMUXMAP pass.
+
+7.2. Executing DEMUXMAP pass.
+Dumping module `\tiny_core_scan'.
+
+8. Executing JSON backend.
+
+End of script. Logfile hash: 5118b16c5d
+Yosys 0.68+136 (git sha1 c30457480-dirty, Release, GNU /usr/bin/x86_64-w64-mingw32-g++ 15.2.1)
+Time spent: 3% 4x opt_expr (0 sec), 3% 3x opt_merge (0 sec), ...

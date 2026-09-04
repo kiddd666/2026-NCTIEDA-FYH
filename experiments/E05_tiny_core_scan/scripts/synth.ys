@@ -1,0 +1,12 @@
+# E05 tiny_core Scan synthesis
+# Run from the E05_tiny_core_scan directory:
+#   yosys -s scripts/synth.ys -l build/yosys.log
+
+read_verilog tiny_core_scan.v
+hierarchy -check -top tiny_core_scan
+proc
+opt
+check
+stat
+write_verilog -noattr build/tiny_core_scan_synth.v
+write_json build/tiny_core_scan.json
