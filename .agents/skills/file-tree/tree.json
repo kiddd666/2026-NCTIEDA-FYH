@@ -85,347 +85,10 @@
         "FYH个人仓库的工作约定与日志规范"
       ]
     },
-    "decisions.md": {
-      "kind": "file",
-      "desc": "技术决策日志",
-      "detail": [
-        "记录重要的长期技术决策"
-      ]
-    },
     "docs": {
       "kind": "dir",
       "desc": "个人研究与学习文档",
       "children": {
-        "DFT与规则学习": {
-          "kind": "dir",
-          "desc": "DFT与规则学习资料",
-          "children": {
-            "00_任务理解.md.md": {
-              "kind": "file",
-              "desc": "任务理解学习笔记",
-              "detail": [
-                "Scan Insertion任务理解与边界笔记"
-              ]
-            },
-            "01_数字设计基础复习.md.md": {
-              "kind": "file",
-              "desc": "数字设计基础复习",
-              "detail": [
-                "数字逻辑与门级设计基础笔记"
-              ]
-            },
-            "02_DFT基础.md.md": {
-              "kind": "file",
-              "desc": "DFT基础笔记",
-              "detail": [
-                "可测性设计基础概念与方法"
-              ]
-            },
-            "03_Internal Scan核心.md.md": {
-              "kind": "file",
-              "desc": "Internal Scan笔记",
-              "detail": [
-                "Internal Scan结构与流程学习笔记"
-              ]
-            },
-            "04_时钟边沿与Lockup.md.md": {
-              "kind": "file",
-              "desc": "时钟边沿与Lockup",
-              "detail": [
-                "扫描时钟与Lockup锁存器笔记"
-              ]
-            },
-            "05_Scan DRC与门级根因分析.md.md": {
-              "kind": "file",
-              "desc": "Scan DRC根因分析",
-              "detail": [
-                "扫描设计规则检查与门级问题分析"
-              ]
-            },
-            "06_Wrapper Scan、CTL与交付物.md.md": {
-              "kind": "file",
-              "desc": "Wrapper与CTL交付物",
-              "detail": [
-                "Wrapper Scan、CTL及交付文件笔记"
-              ]
-            },
-            "07_工具执行、报告核验与LEC.md.md": {
-              "kind": "file",
-              "desc": "工具报告与LEC",
-              "detail": [
-                "工具执行、报告核验与等价性检查"
-              ]
-            },
-            "attachments": {
-              "kind": "dir",
-              "desc": "DFT学习配图",
-              "children": {
-                "Pasted image 20260901093205.png": {
-                  "kind": "file",
-                  "desc": "DFT学习配图",
-                  "detail": [
-                    "DFT基础学习笔记配图"
-                  ]
-                },
-                "Pasted image 20260901094228.png": {
-                  "kind": "file",
-                  "desc": "DFT学习配图",
-                  "detail": [
-                    "DFT基础学习笔记配图"
-                  ]
-                }
-              }
-            },
-            "第一周成果交付": {
-              "kind": "dir",
-              "desc": "第一周网表读图交付",
-              "children": {
-                "00_第一周成果交付说明.md": {
-                  "kind": "file",
-                  "desc": "第一周交付总览与标准",
-                  "detail": [
-                    "说明第一周能力关口、学习闭环、读图原则与交付文件使用顺序"
-                  ]
-                },
-                "01_读图讲义.md": {
-                  "kind": "file",
-                  "desc": "门级网表读图讲义",
-                  "detail": [
-                    "讲解结构化 Verilog、组合逻辑、DFF、Latch、复位和时钟门控识别方法"
-                  ]
-                },
-                "02_week1_reference_netlist.v": {
-                  "kind": "file",
-                  "desc": "第一周唯一参考网表",
-                  "detail": [
-                    "用于独立测验和交叉复核的未标注教学门级网表"
-                  ]
-                },
-                "03_独立测验.md": {
-                  "kind": "file",
-                  "desc": "第一周独立测验",
-                  "detail": [
-                    "围绕唯一参考网表验收端口、DFF、Latch、时钟、复位和门控识别"
-                  ]
-                },
-                "04_参考答案与逐线讲解.md": {
-                  "kind": "file",
-                  "desc": "参考答案与逐线讲解",
-                  "detail": [
-                    "给出参考网表的结构图、答案、路径证据和逐行定位"
-                  ]
-                },
-                "05_交叉复核表.md": {
-                  "kind": "file",
-                  "desc": "第一周交叉复核表",
-                  "detail": [
-                    "记录成员独立作答、他人复核、得分、争议与重测结论"
-                  ]
-                },
-                "D1_赛题能力清单与术语表.md": {
-                  "kind": "file",
-                  "desc": "赛题能力清单与术语表",
-                  "detail": [
-                    "第1日任务边界、问题分类和DFT术语入口"
-                  ],
-                  "rel": [
-                    "docs/DFT与规则学习/00_任务理解.md.md",
-                    "docs/技术路线与实验规划/00_项目核心任务.md"
-                  ]
-                },
-                "D2_组合逻辑速查表.md": {
-                  "kind": "file",
-                  "desc": "组合逻辑速查表",
-                  "detail": [
-                    "第2日MUX、INV、AND、OR、TBUF和X/Z速查"
-                  ],
-                  "rel": [
-                    "docs/DFT与规则学习/第一周成果交付/01_读图讲义.md",
-                    "docs/DFT与规则学习/第一周成果交付/02_week1_reference_netlist.v"
-                  ]
-                },
-                "D3_时序单元对照表.md": {
-                  "kind": "file",
-                  "desc": "时序单元对照表",
-                  "detail": [
-                    "第3日DFF、Latch、复位和时序风险对照"
-                  ],
-                  "rel": [
-                    "docs/DFT与规则学习/第一周成果交付/01_读图讲义.md",
-                    "docs/DFT与规则学习/第一周成果交付/02_week1_reference_netlist.v"
-                  ]
-                },
-                "D4_结构化门级网表及标注.md": {
-                  "kind": "file",
-                  "desc": "结构化网表及标注",
-                  "detail": [
-                    "第4日唯一参考网表的结构图、端口、实例和路径标注"
-                  ],
-                  "rel": [
-                    "docs/DFT与规则学习/第一周成果交付/02_week1_reference_netlist.v",
-                    "docs/DFT与规则学习/第一周成果交付/04_参考答案与逐线讲解.md"
-                  ]
-                },
-                "D5_Scan原理图与第一周测验.md": {
-                  "kind": "file",
-                  "desc": "Scan原理图与第一周测验",
-                  "detail": [
-                    "第5日Scan、可控性、可观性原理图及测验入口"
-                  ],
-                  "rel": [
-                    "docs/DFT与规则学习/第一周成果交付/03_独立测验.md",
-                    "docs/DFT与规则学习/第一周成果交付/05_交叉复核表.md"
-                  ]
-                }
-              }
-            },
-            "第二周成果交付": {
-              "kind": "dir",
-              "desc": "第二周Scan交付包",
-              "detail": [
-                "第二周Internal Scan与通用DRC的学习、练习和复核成果"
-              ],
-              "children": {
-                "00_第二周成果交付说明.md": {
-                  "kind": "file",
-                  "desc": "第二周交付总览",
-                  "detail": [
-                    "说明第二周五个日产物、复用关系、练习顺序和关口标准"
-                  ]
-                },
-                "01_第二周练习讲义与单元契约.md": {
-                  "kind": "file",
-                  "desc": "练习讲义与单元契约",
-                  "detail": [
-                    "统一Scan Cell、链、Lockup、Shift/Capture和网表阅读契约"
-                  ],
-                  "rel": [
-                    "docs/DFT与规则学习/第二周成果交付/02_week2_dual_clock_reference_netlist.v"
-                  ]
-                },
-                "02_week2_dual_clock_reference_netlist.v": {
-                  "kind": "file",
-                  "desc": "第二周唯一练习网表",
-                  "detail": [
-                    "包含两个时钟域和正负沿DFF的插链前教学网表"
-                  ],
-                  "rel": [
-                    "docs/DFT与规则学习/第二周成果交付/01_第二周练习讲义与单元契约.md"
-                  ]
-                },
-                "03_独立练习与测验.md": {
-                  "kind": "file",
-                  "desc": "第二周独立测验",
-                  "detail": [
-                    "覆盖三类Scan Cell、Scan架构、DRC、流程和双时钟插链的独立作答题"
-                  ],
-                  "rel": [
-                    "docs/DFT与规则学习/第二周成果交付/04_参考答案与逐线讲解.md",
-                    "docs/DFT与规则学习/第二周成果交付/05_交叉复核表.md"
-                  ]
-                },
-                "04_参考答案与逐线讲解.md": {
-                  "kind": "file",
-                  "desc": "第二周参考答案",
-                  "detail": [
-                    "独立测验答案、网表实例证据、链方案和逐段行号讲解"
-                  ],
-                  "rel": [
-                    "docs/DFT与规则学习/第二周成果交付/03_独立练习与测验.md"
-                  ]
-                },
-                "05_交叉复核表.md": {
-                  "kind": "file",
-                  "desc": "第二周交叉复核表",
-                  "detail": [
-                    "由另一名成员复核独立答案、网表证据、链顺序、Lockup和关口得分"
-                  ],
-                  "rel": [
-                    "docs/DFT与规则学习/第二周成果交付/03_独立练习与测验.md"
-                  ]
-                },
-                "D10_双时钟手工插链案例.md": {
-                  "kind": "file",
-                  "desc": "双时钟手工插链案例",
-                  "detail": [
-                    "基于唯一练习网表给出两条等长链、跨域Lockup、时钟协议和验证方案"
-                  ],
-                  "rel": [
-                    "docs/DFT与规则学习/第二周成果交付/02_week2_dual_clock_reference_netlist.v",
-                    "docs/DFT与规则学习/第二周成果交付/05_交叉复核表.md"
-                  ]
-                },
-                "D6_三类ScanCell对照表.md": {
-                  "kind": "file",
-                  "desc": "三类ScanCell对照表",
-                  "detail": [
-                    "对照Muxed-D、Clocked-Scan和LSSD的路径、成本、适用前提和证据边界"
-                  ],
-                  "rel": [
-                    "docs/DFT与规则学习/第二周成果交付/01_第二周练习讲义与单元契约.md"
-                  ]
-                },
-                "D7_Full与PartialScan对照及手工插链.md": {
-                  "kind": "file",
-                  "desc": "FullPartialScan与手工插链",
-                  "detail": [
-                    "对照Full、Almost Full和Partial Scan，并练习Shift、Capture、初始化和四个扫描动作"
-                  ],
-                  "rel": [
-                    "docs/DFT与规则学习/第二周成果交付/02_week2_dual_clock_reference_netlist.v"
-                  ]
-                },
-                "D8_通用DRC根因表.md": {
-                  "kind": "file",
-                  "desc": "通用DRC根因表",
-                  "detail": [
-                    "按现象、对象、门级根因、修复动作和复跑判据整理通用Scan DRC风险"
-                  ],
-                  "rel": [
-                    "docs/DFT与规则学习/第二周成果交付/05_交叉复核表.md"
-                  ]
-                },
-                "D9_Scan流程卡片.md": {
-                  "kind": "file",
-                  "desc": "Scan流程卡片",
-                  "detail": [
-                    "区分Configuration、Replacement、Reordering、Stitching及其输入、出口和证据"
-                  ],
-                  "rel": [
-                    "docs/DFT与规则学习/第二周成果交付/D8_通用DRC根因表.md"
-                  ]
-                }
-              }
-            }
-          }
-        },
-        "参考书籍": {
-          "kind": "dir",
-          "desc": "DFT参考书籍",
-          "children": {
-            "VLSI Test Principles and Architectures - Design for Testability.md": {
-              "kind": "file",
-              "desc": "VLSI测试参考书",
-              "detail": [
-                "VLSI测试原理与可测性设计教材"
-              ]
-            },
-            "VLSI测试方法学和可测性设计.md": {
-              "kind": "file",
-              "desc": "VLSI测试方法学",
-              "detail": [
-                "VLSI测试方法学与可测性设计教材"
-              ]
-            },
-            "数字设计和计算机体系结构原书第2版.md": {
-              "kind": "file",
-              "desc": "数字设计参考书",
-              "detail": [
-                "数字设计与计算机体系结构教材"
-              ]
-            }
-          }
-        },
         "学习笔记": {
           "kind": "dir",
           "desc": "DFT学习笔记",
@@ -440,34 +103,161 @@
                   "detail": [
                     "Codex协作与操作经验笔记"
                   ]
-                },
-                "prompt": {
-                  "kind": "dir",
-                  "desc": "提示词笔记",
-                  "children": {
-                    "codex with gpt.md": {
-                      "kind": "file",
-                      "desc": "Codex与GPT提示词",
-                      "detail": [
-                        "Codex与GPT协作提示词记录"
-                      ]
-                    },
-                    "提问.md": {
-                      "kind": "file",
-                      "desc": "提问提示词笔记",
-                      "detail": [
-                        "与Agent协作的提问模板"
-                      ]
-                    }
-                  }
                 }
               }
             },
-            "VLSI_Test_Principles_Ch02.md": {
-              "kind": "file",
-              "desc": "VLSI测试教材笔记",
+            "assets": {
+              "kind": "dir",
+              "desc": "学习笔记配图资产",
               "detail": [
-                "VLSI测试原理第二章学习笔记"
+                "教材插图复制件，文件名带图号"
+              ],
+              "children": {
+                "fig10_21_1500_system_overview.jpg": {
+                  "kind": "file",
+                  "desc": "教材Fig.10.21系统概览",
+                  "detail": [
+                    "教材图10.21：N个核各包wrapper，WSP串行链与用户定义并行TAM"
+                  ]
+                },
+                "fig10_22_core_wrapper_test_interface.jpg": {
+                  "kind": "file",
+                  "desc": "教材Fig.10.22核外壳测试接口",
+                  "detail": [
+                    "教材图10.22：必选WSP（WSI/WSO/WSC）与可选WPP（WPI/WPO/WPC）"
+                  ]
+                },
+                "fig10_23_1500_serial_test_circuitry.jpg": {
+                  "kind": "file",
+                  "desc": "教材Fig.10.23串行测试电路",
+                  "detail": [
+                    "教材图10.23：WSP/WPP/WIR/WBY/WBR五部件与WBC四端子全景图"
+                  ]
+                },
+                "fig10_24_wir_circuitry.jpg": {
+                  "kind": "file",
+                  "desc": "教材Fig.10.24 WIR电路设计",
+                  "detail": [
+                    "教材图10.24：WIR移位级加译码更新级，无TAP状态机由指令与WSC共同译码"
+                  ]
+                },
+                "fig10_25_bubble_symbols.jpg": {
+                  "kind": "file",
+                  "desc": "教材Fig.10.25气泡图符号",
+                  "detail": [
+                    "教材图10.25：圆圈存储元件、数据通路箭头、选择点与同源分叉四符号"
+                  ]
+                },
+                "fig10_26_wbc_bubble_diagrams_1.jpg": {
+                  "kind": "file",
+                  "desc": "教材Fig.10.26气泡图前半",
+                  "detail": [
+                    "教材图10.26前半：WC_SD1_CII/WC_SD2_CII/WC_SD2_CIU_UF/WC_SD1_CN气泡图"
+                  ]
+                },
+                "fig10_26_wbc_bubble_diagrams_2.jpg": {
+                  "kind": "file",
+                  "desc": "教材Fig.10.26气泡图后半",
+                  "detail": [
+                    "教材图10.26后半：WC_SD2_CIO/WC_SD1_CII_UD/WC_SDn_CII_UD/WC_SD1_CBI_UD"
+                  ]
+                },
+                "fig2_07_sequential_test_difficulty.jpg": {
+                  "kind": "file",
+                  "desc": "教材Fig.2.7时序测试困难",
+                  "detail": [
+                    "教材图2.7：故障f需内部状态FF2=1/FF3=0才能捕获，说明时序电路内部状态难控难观"
+                  ]
+                },
+                "fig2_08_scan_design_concept.jpg": {
+                  "kind": "file",
+                  "desc": "教材Fig.2.8扫描设计概念",
+                  "detail": [
+                    "教材图2.8：n个扫描单元构成移位寄存器，激励n拍移入响应n拍移出"
+                  ]
+                },
+                "fig2_09a_muxed_d_scan_cell.jpg": {
+                  "kind": "file",
+                  "desc": "教材Fig.2.9a扫描单元",
+                  "detail": [
+                    "教材图2.9a：DFF前加2选1MUX，SE在DI与SI间选择，输出Q/SO"
+                  ]
+                },
+                "fig2_09b_muxed_d_scan_cell_waveforms.jpg": {
+                  "kind": "file",
+                  "desc": "教材Fig.2.9b扫描单元波形",
+                  "detail": [
+                    "教材图2.9b：SE=0逐拍捕获D1-D4，SE=1逐拍移入T1-T4的示例波形"
+                  ]
+                },
+                "fig2_13_sequential_circuit_example.jpg": {
+                  "kind": "file",
+                  "desc": "教材Fig.2.13时序电路示例",
+                  "detail": [
+                    "教材图2.13：组合逻辑加三个DFF的原始时序电路，全扫描改造的前身"
+                  ]
+                },
+                "fig2_14a_muxed_d_full_scan_circuit.jpg": {
+                  "kind": "file",
+                  "desc": "教材Fig.2.14a全扫描电路",
+                  "detail": [
+                    "教材图2.14a：FF替换为SFF并串接成链，标注PI/PO与PPI/PPO边界"
+                  ]
+                },
+                "fig2_14b_full_scan_test_operations.jpg": {
+                  "kind": "file",
+                  "desc": "教材Fig.2.14b扫描测试时序",
+                  "detail": [
+                    "教材图2.14b：S/H/C操作时序，展示V1与V2的移入捕获移出协作"
+                  ]
+                },
+                "fig2_23a_gated_clock_original.jpg": {
+                  "kind": "file",
+                  "desc": "教材Fig.2.23a门控时钟原电路",
+                  "detail": [
+                    "教材图2.23a：EN经锁存器生成CEN与CK相与门控DFF时钟"
+                  ]
+                },
+                "fig2_23b_gated_clock_fixed.jpg": {
+                  "kind": "file",
+                  "desc": "教材Fig.2.23b门控时钟修复",
+                  "detail": [
+                    "教材图2.23b：OR门用TM或SE强制CEN=1，保证移位期间时钟不被门控"
+                  ]
+                },
+                "fig2_26a_async_reset_original.jpg": {
+                  "kind": "file",
+                  "desc": "教材Fig.2.26a异步复位原电路",
+                  "detail": [
+                    "教材图2.26a：SFF1.Q驱动SFF2异步复位端R，属顺序控制信号违例"
+                  ]
+                },
+                "fig2_26b_async_reset_fixed.jpg": {
+                  "kind": "file",
+                  "desc": "教材Fig.2.26b异步复位修复",
+                  "detail": [
+                    "教材图2.26b：OR门接TM，TM=1时整个测试期间禁用异步复位RL"
+                  ]
+                },
+                "fig2_27_scan_design_flow.jpg": {
+                  "kind": "file",
+                  "desc": "教材Fig.2.27扫描设计流程",
+                  "detail": [
+                    "教材图2.27：DRC修复→扫描综合四步→扫描提取→扫描验证的完整流程图"
+                  ]
+                }
+              }
+            },
+            "DFT_Scan与Wrapper实验讲解笔记.md": {
+              "kind": "file",
+              "desc": "Scan与Wrapper实验讲解笔记",
+              "detail": [
+                "讲解主线重组教材2.2-2.7与10.4.2-10.4.5；第8章四实验对应表；19张教材插图附五要素读图块"
+              ],
+              "rel": [
+                "experiments/E05_tiny_core_scan/README.md",
+                "experiments/E05_tiny_core_scan/results.md",
+                "experiments/E05_tiny_core_scan/src/tiny_core_scan.v"
               ]
             }
           }
@@ -490,35 +280,7 @@
                 "开源资料整理与实验规划"
               ]
             },
-            "02_DFT与设计知识学习地图及学习大纲.md": {
-              "kind": "file",
-              "desc": "DFT学习地图",
-              "detail": [
-                "DFT与设计知识学习地图及大纲"
-              ]
-            },
-            "03_DFT与设计知识学习缺口报告.md": {
-              "kind": "file",
-              "desc": "DFT学习缺口",
-              "detail": [
-                "DFT与设计知识学习缺口分析"
-              ]
-            },
-            "04_DFT与规则负责人项目学习路线.md": {
-              "kind": "file",
-              "desc": "DFT负责人学习路线",
-              "detail": [
-                "DFT与规则负责人项目学习路线"
-              ]
-            },
-            "05_DFT基础知识清单_下周日讲解.md": {
-              "kind": "file",
-              "desc": "DFT基础知识清单",
-              "detail": [
-                "DFT基础知识讲解准备清单"
-              ]
-            },
-            "06_9.2学习计划与实验方案.md": {
+            "02_9.2学习计划与实验方案.md": {
               "kind": "file",
               "desc": "9月2日至5日学习与前置实验方案",
               "detail": [
@@ -541,6 +303,20 @@
               "kind": "dir",
               "desc": "实验生成物",
               "children": {
+                "e05_sim.vvp": {
+                  "kind": "file",
+                  "desc": "E05仿真编译产物",
+                  "detail": [
+                    "iverilog编译生成的仿真可执行文件，可重复运行"
+                  ]
+                },
+                "sim_e05.log": {
+                  "kind": "file",
+                  "desc": "E05仿真日志",
+                  "detail": [
+                    "功能模式/移入/捕获/移出/回功能五阶段全PASS的运行日志，验证证据"
+                  ]
+                },
                 "tiny_core_scan.json": {
                   "kind": "file",
                   "desc": "综合结构 JSON",
@@ -555,13 +331,6 @@
                     "E05 tiny_core_scan 经 Yosys RTL 综合与优化后导出的 Verilog 网表。"
                   ]
                 },
-                "wave.vcd": {
-                  "kind": "file",
-                  "desc": "扫描实验波形",
-                  "detail": [
-                    "E05 tiny_core 扫描链仿真生成的 VCD 波形文件。"
-                  ]
-                },
                 "yosys.log": {
                   "kind": "file",
                   "desc": "Yosys 综合日志",
@@ -570,6 +339,28 @@
                   ]
                 }
               }
+            },
+            "README.md": {
+              "kind": "file",
+              "desc": "E05实验README",
+              "detail": [
+                "11节统一格式：问题/教材知识/教材图/电路/代码/运行/波形/正确结果/说明/比赛关系/3分钟讲解稿"
+              ],
+              "rel": [
+                "experiments/E05_tiny_core_scan/results.md",
+                "experiments/E05_tiny_core_scan/src/tiny_core_scan.v"
+              ]
+            },
+            "results.md": {
+              "kind": "file",
+              "desc": "E05结果记录",
+              "detail": [
+                "运行记录、失败证据保留、5项验证对照、工具环境与产物清单"
+              ],
+              "rel": [
+                "experiments/E05_tiny_core_scan/build/sim_e05.log",
+                "experiments/E05_tiny_core_scan/README.md"
+              ]
             },
             "scripts": {
               "kind": "dir",
@@ -584,37 +375,64 @@
                 }
               }
             },
-            "tiny_core_prescan.v": {
-              "kind": "file",
-              "desc": "扫描前 tiny_core 设计",
+            "src": {
+              "kind": "dir",
+              "desc": "E05设计源码目录",
               "detail": [
-                "用于扫描链插入前的 tiny_core 参考设计。"
-              ]
+                "tiny_core_prescan.v（插链前）与 tiny_core_scan.v（插链后）"
+              ],
+              "children": {
+                "tiny_core_prescan.v": {
+                  "kind": "file",
+                  "desc": "扫描前 tiny_core 设计",
+                  "detail": [
+                    "用于扫描链插入前的 tiny_core 参考设计。"
+                  ]
+                },
+                "tiny_core_scan.v": {
+                  "kind": "file",
+                  "desc": "插入扫描链的 tiny_core",
+                  "detail": [
+                    "用于保存完成扫描链插入后的 tiny_core 设计。"
+                  ]
+                }
+              }
             },
-            "tiny_core_scan.v": {
-              "kind": "file",
-              "desc": "插入扫描链的 tiny_core",
+            "tb": {
+              "kind": "dir",
+              "desc": "E05测试平台目录",
               "detail": [
-                "用于保存完成扫描链插入后的 tiny_core 设计。"
-              ]
+                "tiny_core_scan_tb.v：功能/移入/捕获/移出/回功能五阶段验证"
+              ],
+              "children": {
+                "tiny_core_scan_tb.v": {
+                  "kind": "file",
+                  "desc": "扫描链测试平台",
+                  "detail": [
+                    "用于验证 tiny_core 扫描设计功能与扫描移位行为的测试平台。"
+                  ]
+                }
+              }
             },
-            "tiny_core_scan_tb.v": {
-              "kind": "file",
-              "desc": "扫描链测试平台",
+            "waves": {
+              "kind": "dir",
+              "desc": "E05波形目录",
               "detail": [
-                "用于验证 tiny_core 扫描设计功能与扫描移位行为的测试平台。"
-              ]
+                "wave.vcd：GTKWave 查看的仿真波形"
+              ],
+              "children": {
+                "wave.vcd": {
+                  "kind": "file",
+                  "desc": "扫描实验波形",
+                  "detail": [
+                    "E05 tiny_core 扫描链仿真生成的 VCD 波形文件。"
+                  ]
+                }
+              }
             }
           }
         }
       }
-    },
-    "progress.md": {
-      "kind": "file",
-      "desc": "项目进展日志",
-      "detail": [
-        "记录阶段性项目状态变化"
-      ]
     },
     "README.md": {
       "kind": "file",
@@ -627,13 +445,6 @@
       "kind": "dir",
       "desc": "个人辅助脚本",
       "children": {}
-    },
-    "TODO.md": {
-      "kind": "file",
-      "desc": "当前任务清单",
-      "detail": [
-        "记录可执行的个人待办事项"
-      ]
     }
   }
 }

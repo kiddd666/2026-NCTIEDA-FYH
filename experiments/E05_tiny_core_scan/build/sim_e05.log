@@ -1,0 +1,31 @@
+VCD info: dumpfile waves/wave.vcd opened for output.
+
+========== RESET DONE ==========
+
+========== FUNCTIONAL (scan_en=0) ==========
+[FUNC] t=26000  in=101  q=1001 (expect 1001)
+[FUNC] t=36000  in=010  q=0111 (expect 0111)
+[FUNC] t=46000  in=111  q=1011 (expect 1011)
+[FUNC] t=56000  in=000  q=0001 (expect 0001)
+[SHIFT-IN] SI=1  q=0011
+[SHIFT-IN] SI=0  q=0110
+[SHIFT-IN] SI=1  q=1101
+[SHIFT-IN] SI=0  q=1010
+[PASS] Shift-In loaded q=1010
+
+========== CAPTURE ==========
+Captured q = 0100
+[PASS] Capture result q=0100
+
+========== SHIFT-OUT ==========
+[PASS] scan_out=0
+[PASS] scan_out=1
+[PASS] scan_out=0
+[PASS] scan_out=0
+
+========== BACK TO FUNCTIONAL ==========
+[PASS] chain empty, q=0000
+[FUNC] t=156000  in=110  q=0001 (expect 0001)
+
+========== E05 PASS ==========
+tb/tiny_core_scan_tb.v:288: $finish called at 166000 (1ps)

@@ -118,79 +118,56 @@ FYH/
 ├── .gitignore   # FYH仓库忽略规则
 ├── .vscode/     # VS Code工作区配置
 ├── AGENTS.md    # FYH个人协作规则
-├── decisions.md # 技术决策日志
 ├── docs/        # 个人研究与学习文档
-│   ├── DFT与规则学习/  # DFT与规则学习资料
-│   │   ├── 00_任务理解.md.md                 # 任务理解学习笔记
-│   │   ├── 01_数字设计基础复习.md.md             # 数字设计基础复习
-│   │   ├── 02_DFT基础.md.md                # DFT基础笔记
-│   │   ├── 03_Internal Scan核心.md.md      # Internal Scan笔记
-│   │   ├── 04_时钟边沿与Lockup.md.md          # 时钟边沿与Lockup
-│   │   ├── 05_Scan DRC与门级根因分析.md.md      # Scan DRC根因分析
-│   │   ├── 06_Wrapper Scan、CTL与交付物.md.md # Wrapper与CTL交付物
-│   │   ├── 07_工具执行、报告核验与LEC.md.md        # 工具报告与LEC
-│   │   ├── attachments/                  # DFT学习配图
-│   │   │   ├── Pasted image 20260901093205.png # DFT学习配图
-│   │   │   └── Pasted image 20260901094228.png # DFT学习配图
-│   │   ├── 第一周成果交付/                      # 第一周网表读图交付
-│   │   │   ├── 00_第一周成果交付说明.md              # 第一周交付总览与标准
-│   │   │   ├── 01_读图讲义.md                   # 门级网表读图讲义
-│   │   │   ├── 02_week1_reference_netlist.v # 第一周唯一参考网表
-│   │   │   ├── 03_独立测验.md                   # 第一周独立测验
-│   │   │   ├── 04_参考答案与逐线讲解.md              # 参考答案与逐线讲解
-│   │   │   ├── 05_交叉复核表.md                  # 第一周交叉复核表
-│   │   │   ├── D1_赛题能力清单与术语表.md             # 赛题能力清单与术语表
-│   │   │   ├── D2_组合逻辑速查表.md                # 组合逻辑速查表
-│   │   │   ├── D3_时序单元对照表.md                # 时序单元对照表
-│   │   │   ├── D4_结构化门级网表及标注.md             # 结构化网表及标注
-│   │   │   └── D5_Scan原理图与第一周测验.md          # Scan原理图与第一周测验
-│   │   └── 第二周成果交付/                      # 第二周Scan交付包
-│   │       ├── 00_第二周成果交付说明.md                         # 第二周交付总览
-│   │       ├── 01_第二周练习讲义与单元契约.md                      # 练习讲义与单元契约
-│   │       ├── 02_week2_dual_clock_reference_netlist.v # 第二周唯一练习网表
-│   │       ├── 03_独立练习与测验.md                           # 第二周独立测验
-│   │       ├── 04_参考答案与逐线讲解.md                         # 第二周参考答案
-│   │       ├── 05_交叉复核表.md                             # 第二周交叉复核表
-│   │       ├── D10_双时钟手工插链案例.md                        # 双时钟手工插链案例
-│   │       ├── D6_三类ScanCell对照表.md                     # 三类ScanCell对照表
-│   │       ├── D7_Full与PartialScan对照及手工插链.md           # FullPartialScan与手工插链
-│   │       ├── D8_通用DRC根因表.md                          # 通用DRC根因表
-│   │       └── D9_Scan流程卡片.md                          # Scan流程卡片
-│   ├── 参考书籍/      # DFT参考书籍
-│   │   ├── VLSI Test Principles and Architectures - Design for Testability.md # VLSI测试参考书
-│   │   ├── VLSI测试方法学和可测性设计.md                                                 # VLSI测试方法学
-│   │   └── 数字设计和计算机体系结构原书第2版.md                                               # 数字设计参考书
 │   ├── 学习笔记/      # DFT学习笔记
-│   │   ├── agent使用技巧/                   # Agent使用技巧笔记
-│   │   │   ├── codex使用技巧.md # Codex使用技巧笔记
-│   │   │   └── prompt/      # 提示词笔记
-│   │   │       ├── codex with gpt.md # Codex与GPT提示词
-│   │   │       └── 提问.md             # 提问提示词笔记
-│   │   └── VLSI_Test_Principles_Ch02.md # VLSI测试教材笔记
+│   │   ├── agent使用技巧/                # Agent使用技巧笔记
+│   │   │   └── codex使用技巧.md # Codex使用技巧笔记
+│   │   ├── assets/                   # 学习笔记配图资产
+│   │   │   ├── fig10_21_1500_system_overview.jpg        # 教材Fig.10.21系统概览
+│   │   │   ├── fig10_22_core_wrapper_test_interface.jpg # 教材Fig.10.22核外壳测试接口
+│   │   │   ├── fig10_23_1500_serial_test_circuitry.jpg  # 教材Fig.10.23串行测试电路
+│   │   │   ├── fig10_24_wir_circuitry.jpg               # 教材Fig.10.24 WIR电路设计
+│   │   │   ├── fig10_25_bubble_symbols.jpg              # 教材Fig.10.25气泡图符号
+│   │   │   ├── fig10_26_wbc_bubble_diagrams_1.jpg       # 教材Fig.10.26气泡图前半
+│   │   │   ├── fig10_26_wbc_bubble_diagrams_2.jpg       # 教材Fig.10.26气泡图后半
+│   │   │   ├── fig2_07_sequential_test_difficulty.jpg   # 教材Fig.2.7时序测试困难
+│   │   │   ├── fig2_08_scan_design_concept.jpg          # 教材Fig.2.8扫描设计概念
+│   │   │   ├── fig2_09a_muxed_d_scan_cell.jpg           # 教材Fig.2.9a扫描单元
+│   │   │   ├── fig2_09b_muxed_d_scan_cell_waveforms.jpg # 教材Fig.2.9b扫描单元波形
+│   │   │   ├── fig2_13_sequential_circuit_example.jpg   # 教材Fig.2.13时序电路示例
+│   │   │   ├── fig2_14a_muxed_d_full_scan_circuit.jpg   # 教材Fig.2.14a全扫描电路
+│   │   │   ├── fig2_14b_full_scan_test_operations.jpg   # 教材Fig.2.14b扫描测试时序
+│   │   │   ├── fig2_23a_gated_clock_original.jpg        # 教材Fig.2.23a门控时钟原电路
+│   │   │   ├── fig2_23b_gated_clock_fixed.jpg           # 教材Fig.2.23b门控时钟修复
+│   │   │   ├── fig2_26a_async_reset_original.jpg        # 教材Fig.2.26a异步复位原电路
+│   │   │   ├── fig2_26b_async_reset_fixed.jpg           # 教材Fig.2.26b异步复位修复
+│   │   │   └── fig2_27_scan_design_flow.jpg             # 教材Fig.2.27扫描设计流程
+│   │   └── DFT_Scan与Wrapper实验讲解笔记.md # Scan与Wrapper实验讲解笔记
 │   └── 技术路线与实验规划/ # 技术路线与实验规划文档
-│       ├── 00_项目核心任务.md            # 项目核心任务
-│       ├── 01_开源资料与实验.md           # 开源资料与实验
-│       ├── 02_DFT与设计知识学习地图及学习大纲.md # DFT学习地图
-│       ├── 03_DFT与设计知识学习缺口报告.md    # DFT学习缺口
-│       ├── 04_DFT与规则负责人项目学习路线.md   # DFT负责人学习路线
-│       ├── 05_DFT基础知识清单_下周日讲解.md   # DFT基础知识清单
-│       └── 06_9.2学习计划与实验方案.md      # 9月2日至5日学习与前置实验方案
+│       ├── 00_项目核心任务.md       # 项目核心任务
+│       ├── 01_开源资料与实验.md      # 开源资料与实验
+│       └── 02_9.2学习计划与实验方案.md # 9月2日至5日学习与前置实验方案
 ├── experiments/ # 实验记录与产物
 │   └── E05_tiny_core_scan/ # tiny_core 扫描实验
-│       ├── build/              # 实验生成物
+│       ├── build/     # 实验生成物
+│       │   ├── e05_sim.vvp            # E05仿真编译产物
+│       │   ├── sim_e05.log            # E05仿真日志
 │       │   ├── tiny_core_scan.json    # 综合结构 JSON
 │       │   ├── tiny_core_scan_synth.v # 综合后 Verilog 网表
-│       │   ├── wave.vcd               # 扫描实验波形
 │       │   └── yosys.log              # Yosys 综合日志
-│       ├── scripts/            # 实验脚本
+│       ├── README.md  # E05实验README
+│       ├── results.md # E05结果记录
+│       ├── scripts/   # 实验脚本
 │       │   └── synth.ys # Yosys 综合脚本
-│       ├── tiny_core_prescan.v # 扫描前 tiny_core 设计
-│       ├── tiny_core_scan.v    # 插入扫描链的 tiny_core
-│       └── tiny_core_scan_tb.v # 扫描链测试平台
-├── progress.md  # 项目进展日志
+│       ├── src/       # E05设计源码目录
+│       │   ├── tiny_core_prescan.v # 扫描前 tiny_core 设计
+│       │   └── tiny_core_scan.v    # 插入扫描链的 tiny_core
+│       ├── tb/        # E05测试平台目录
+│       │   └── tiny_core_scan_tb.v # 扫描链测试平台
+│       └── waves/     # E05波形目录
+│           └── wave.vcd # 扫描实验波形
 ├── README.md    # FYH个人仓库说明
-├── scripts/     # 个人辅助脚本
-└── TODO.md      # 当前任务清单
+└── scripts/     # 个人辅助脚本
 <!-- file-tree:tree:end -->
 ```
 

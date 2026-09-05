@@ -1,4 +1,3 @@
-
 我建议你重点养成下面 9 个习惯：
 
 1. **一次只交给 Codex 一个明确目标。** 不要说“帮我把 DFT 模块做好”，而要说“先阅读 `FYH/...` 和相关接口，实现门级网表中 DFF/clock/reset 的提取，补测试，不修改其他模块”。OpenAI 的实践建议是把任务控制在类似一个工程师大约一小时能完成、或几百行代码量级的范围内。([OpenAI][1])
@@ -98,6 +97,9 @@
 > **先阅读相关代码和 AGENTS → 找已有实现 → 给出简短方案 → 在限定范围内实现 → 跑测试 → 检查 diff → 汇报。**
 
 这个改动会明显提升 Codex 的稳定性。
+
+
+我的经验是列一个长期大纲+每个纲目按需扩展一份明细、执行计划，这样他就可以大纲定位，细则补全上下文；这样他只需要读大纲和对应细则两个文件，只需要知道大致的进度+局部细节。有什么中途发生的问题、待补项再补到细则也好、全局大纲也好
 
 [1]: https://openai.com/business/guides-and-resources/how-openai-uses-codex/?utm_source=chatgpt.com
 [2]: https://openai.com/index/harness-engineering/?utm_source=chatgpt.com

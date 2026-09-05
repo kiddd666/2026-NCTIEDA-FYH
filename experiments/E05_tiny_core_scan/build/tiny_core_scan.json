@@ -4,7 +4,7 @@
     "tiny_core_scan": {
       "attributes": {
         "top": "00000000000000000000000000000001",
-        "src": "tiny_core_scan.v:4.1-70.10"
+        "src": "src/tiny_core_scan.v:4.1-70.10"
       },
       "ports": {
         "clk": {
@@ -45,7 +45,7 @@
         }
       },
       "cells": {
-        "$and$tiny_core_scan.v:34$2": {
+        "$and$src/tiny_core_scan.v:34$2": {
           "hide_name": 1,
           "type": "$and",
           "parameters": {
@@ -56,7 +56,7 @@
             "Y_WIDTH": "00000000000000000000000000000001"
           },
           "attributes": {
-            "src": "tiny_core_scan.v:34.17-34.28"
+            "src": "src/tiny_core_scan.v:34.17-34.28"
           },
           "port_directions": {
             "A": "input",
@@ -69,7 +69,7 @@
             "Y": [ 12 ]
           }
         },
-        "$or$tiny_core_scan.v:36$4": {
+        "$or$src/tiny_core_scan.v:36$4": {
           "hide_name": 1,
           "type": "$or",
           "parameters": {
@@ -80,7 +80,7 @@
             "Y_WIDTH": "00000000000000000000000000000001"
           },
           "attributes": {
-            "src": "tiny_core_scan.v:36.17-36.28"
+            "src": "src/tiny_core_scan.v:36.17-36.28"
           },
           "port_directions": {
             "A": "input",
@@ -103,7 +103,7 @@
             "WIDTH": "00000000000000000000000000000100"
           },
           "attributes": {
-            "src": "tiny_core_scan.v:42.5-64.8"
+            "src": "src/tiny_core_scan.v:42.5-64.8"
           },
           "port_directions": {
             "ARST": "input",
@@ -126,7 +126,7 @@
           },
           "attributes": {
             "full_case": "00000000000000000000000000000001",
-            "src": "tiny_core_scan.v:46.18-46.25|tiny_core_scan.v:46.14-63.12"
+            "src": "src/tiny_core_scan.v:46.18-46.25|src/tiny_core_scan.v:46.14-63.12"
           },
           "port_directions": {
             "A": "input",
@@ -149,7 +149,7 @@
           },
           "attributes": {
             "full_case": "00000000000000000000000000000001",
-            "src": "tiny_core_scan.v:46.18-46.25|tiny_core_scan.v:46.14-63.12"
+            "src": "src/tiny_core_scan.v:46.18-46.25|src/tiny_core_scan.v:46.14-63.12"
           },
           "port_directions": {
             "A": "input",
@@ -172,7 +172,7 @@
           },
           "attributes": {
             "full_case": "00000000000000000000000000000001",
-            "src": "tiny_core_scan.v:46.18-46.25|tiny_core_scan.v:46.14-63.12"
+            "src": "src/tiny_core_scan.v:46.18-46.25|src/tiny_core_scan.v:46.14-63.12"
           },
           "port_directions": {
             "A": "input",
@@ -195,7 +195,7 @@
           },
           "attributes": {
             "full_case": "00000000000000000000000000000001",
-            "src": "tiny_core_scan.v:46.18-46.25|tiny_core_scan.v:46.14-63.12"
+            "src": "src/tiny_core_scan.v:46.18-46.25|src/tiny_core_scan.v:46.14-63.12"
           },
           "port_directions": {
             "A": "input",
@@ -210,7 +210,7 @@
             "Y": [ 18 ]
           }
         },
-        "$xor$tiny_core_scan.v:33$1": {
+        "$xor$src/tiny_core_scan.v:33$1": {
           "hide_name": 1,
           "type": "$xor",
           "parameters": {
@@ -221,7 +221,7 @@
             "Y_WIDTH": "00000000000000000000000000000001"
           },
           "attributes": {
-            "src": "tiny_core_scan.v:33.17-33.28"
+            "src": "src/tiny_core_scan.v:33.17-33.28"
           },
           "port_directions": {
             "A": "input",
@@ -234,7 +234,7 @@
             "Y": [ 21 ]
           }
         },
-        "$xor$tiny_core_scan.v:35$3": {
+        "$xor$src/tiny_core_scan.v:35$3": {
           "hide_name": 1,
           "type": "$xor",
           "parameters": {
@@ -245,7 +245,7 @@
             "Y_WIDTH": "00000000000000000000000000000001"
           },
           "attributes": {
-            "src": "tiny_core_scan.v:35.17-35.28"
+            "src": "src/tiny_core_scan.v:35.17-35.28"
           },
           "port_directions": {
             "A": "input",
@@ -258,7 +258,7 @@
             "Y": [ 20 ]
           }
         },
-        "$xor$tiny_core_scan.v:68$7": {
+        "$xor$src/tiny_core_scan.v:68$7": {
           "hide_name": 1,
           "type": "$xor",
           "parameters": {
@@ -269,7 +269,7 @@
             "Y_WIDTH": "00000000000000000000000000000001"
           },
           "attributes": {
-            "src": "tiny_core_scan.v:68.16-68.27"
+            "src": "src/tiny_core_scan.v:68.16-68.27"
           },
           "port_directions": {
             "A": "input",
@@ -288,105 +288,105 @@
           "hide_name": 1,
           "bits": [ 15, 16, 17, 18 ],
           "attributes": {
-            "src": "tiny_core_scan.v:42.5-64.8"
+            "src": "src/tiny_core_scan.v:42.5-64.8"
           }
         },
         "clk": {
           "hide_name": 0,
           "bits": [ 2 ],
           "attributes": {
-            "src": "tiny_core_scan.v:5.17-5.20"
+            "src": "src/tiny_core_scan.v:5.17-5.20"
           }
         },
         "d0": {
           "hide_name": 0,
           "bits": [ 21 ],
           "attributes": {
-            "src": "tiny_core_scan.v:24.10-24.12"
+            "src": "src/tiny_core_scan.v:24.10-24.12"
           }
         },
         "d1": {
           "hide_name": 0,
           "bits": [ 12 ],
           "attributes": {
-            "src": "tiny_core_scan.v:25.10-25.12"
+            "src": "src/tiny_core_scan.v:25.10-25.12"
           }
         },
         "d2": {
           "hide_name": 0,
           "bits": [ 20 ],
           "attributes": {
-            "src": "tiny_core_scan.v:26.10-26.12"
+            "src": "src/tiny_core_scan.v:26.10-26.12"
           }
         },
         "d3": {
           "hide_name": 0,
           "bits": [ 14 ],
           "attributes": {
-            "src": "tiny_core_scan.v:27.10-27.12"
+            "src": "src/tiny_core_scan.v:27.10-27.12"
           }
         },
         "in_a": {
           "hide_name": 0,
           "bits": [ 4 ],
           "attributes": {
-            "src": "tiny_core_scan.v:9.17-9.21"
+            "src": "src/tiny_core_scan.v:9.17-9.21"
           }
         },
         "in_b": {
           "hide_name": 0,
           "bits": [ 5 ],
           "attributes": {
-            "src": "tiny_core_scan.v:10.17-10.21"
+            "src": "src/tiny_core_scan.v:10.17-10.21"
           }
         },
         "in_c": {
           "hide_name": 0,
           "bits": [ 6 ],
           "attributes": {
-            "src": "tiny_core_scan.v:11.17-11.21"
+            "src": "src/tiny_core_scan.v:11.17-11.21"
           }
         },
         "q": {
           "hide_name": 0,
           "bits": [ 11, 19, 13, 9 ],
           "attributes": {
-            "src": "tiny_core_scan.v:22.15-22.16"
+            "src": "src/tiny_core_scan.v:22.15-22.16"
           }
         },
         "rst_n": {
           "hide_name": 0,
           "bits": [ 3 ],
           "attributes": {
-            "src": "tiny_core_scan.v:6.17-6.22"
+            "src": "src/tiny_core_scan.v:6.17-6.22"
           }
         },
         "scan_en": {
           "hide_name": 0,
           "bits": [ 7 ],
           "attributes": {
-            "src": "tiny_core_scan.v:14.17-14.24"
+            "src": "src/tiny_core_scan.v:14.17-14.24"
           }
         },
         "scan_in": {
           "hide_name": 0,
           "bits": [ 8 ],
           "attributes": {
-            "src": "tiny_core_scan.v:15.17-15.24"
+            "src": "src/tiny_core_scan.v:15.17-15.24"
           }
         },
         "scan_out": {
           "hide_name": 0,
           "bits": [ 9 ],
           "attributes": {
-            "src": "tiny_core_scan.v:16.17-16.25"
+            "src": "src/tiny_core_scan.v:16.17-16.25"
           }
         },
         "y": {
           "hide_name": 0,
           "bits": [ 10 ],
           "attributes": {
-            "src": "tiny_core_scan.v:19.17-19.18"
+            "src": "src/tiny_core_scan.v:19.17-19.18"
           }
         }
       }
