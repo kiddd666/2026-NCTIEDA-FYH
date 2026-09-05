@@ -113,6 +113,15 @@
                 "教材插图复制件，文件名带图号"
               ],
               "children": {
+                "assets1": {
+                  "kind": "dir",
+                  "desc": "Scan 与 Wrapper 教材配图",
+                  "detail": [
+                    "本笔记引用的教材 Fig.2.9、Fig.2.14、Fig.2.23、Fig.2.26、Fig.2.27、Fig.10.21～10.26 配图副本。"
+                  ],
+                  "collapsed": true,
+                  "children": {}
+                },
                 "fig10_21_1500_system_overview.jpg": {
                   "kind": "file",
                   "desc": "教材Fig.10.21系统概览",
@@ -244,6 +253,25 @@
                   "desc": "教材Fig.2.27扫描设计流程",
                   "detail": [
                     "教材图2.27：DRC修复→扫描综合四步→扫描提取→扫描验证的完整流程图"
+                  ]
+                }
+              }
+            },
+            "DFT": {
+              "kind": "dir",
+              "desc": "DFT 章节笔记",
+              "detail": [
+                "DFT 章节相关的 Scan 与 Wrapper 学习笔记目录。"
+              ],
+              "children": {
+                "_Scan与Wrapper笔记.md": {
+                  "kind": "file",
+                  "desc": "Scan 与 Wrapper 章节笔记",
+                  "detail": [
+                    "基于教材第 2 章与第 10 章 10.4.2～10.4.5 的理解导向笔记，覆盖 Scan、设计规则、流程、flush test 与 IEEE 1500 Wrapper。"
+                  ],
+                  "rel": [
+                    "docs/学习笔记/DFT_Scan与Wrapper实验讲解笔记.md"
                   ]
                 }
               }

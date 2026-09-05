@@ -123,6 +123,7 @@ FYH/
 │   │   ├── agent使用技巧/                # Agent使用技巧笔记
 │   │   │   └── codex使用技巧.md # Codex使用技巧笔记
 │   │   ├── assets/                   # 学习笔记配图资产
+│   │   │   ├── assets1/                                 # Scan 与 Wrapper 教材配图
 │   │   │   ├── fig10_21_1500_system_overview.jpg        # 教材Fig.10.21系统概览
 │   │   │   ├── fig10_22_core_wrapper_test_interface.jpg # 教材Fig.10.22核外壳测试接口
 │   │   │   ├── fig10_23_1500_serial_test_circuitry.jpg  # 教材Fig.10.23串行测试电路
@@ -142,6 +143,8 @@ FYH/
 │   │   │   ├── fig2_26a_async_reset_original.jpg        # 教材Fig.2.26a异步复位原电路
 │   │   │   ├── fig2_26b_async_reset_fixed.jpg           # 教材Fig.2.26b异步复位修复
 │   │   │   └── fig2_27_scan_design_flow.jpg             # 教材Fig.2.27扫描设计流程
+│   │   ├── DFT/                      # DFT 章节笔记
+│   │   │   └── _Scan与Wrapper笔记.md # Scan 与 Wrapper 章节笔记
 │   │   └── DFT_Scan与Wrapper实验讲解笔记.md # Scan与Wrapper实验讲解笔记
 │   └── 技术路线与实验规划/ # 技术路线与实验规划文档
 │       ├── 00_项目核心任务.md       # 项目核心任务
