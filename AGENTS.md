@@ -144,7 +144,7 @@ FYH/
 │   │   │   ├── fig2_26b_async_reset_fixed.jpg           # 教材Fig.2.26b异步复位修复
 │   │   │   └── fig2_27_scan_design_flow.jpg             # 教材Fig.2.27扫描设计流程
 │   │   ├── DFT/                      # DFT 章节笔记
-│   │   │   └── _Scan与Wrapper笔记.md # Scan 与 Wrapper 章节笔记
+│   │   │   └── 01_DFT基础讲解笔记.md # Scan 与 Wrapper 章节笔记
 │   │   └── DFT_Scan与Wrapper实验讲解笔记.md # Scan与Wrapper实验讲解笔记
 │   └── 技术路线与实验规划/ # 技术路线与实验规划文档
 │       ├── 00_项目核心任务.md       # 项目核心任务

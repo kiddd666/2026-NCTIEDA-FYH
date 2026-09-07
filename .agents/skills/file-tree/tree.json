@@ -264,7 +264,7 @@
                 "DFT 章节相关的 Scan 与 Wrapper 学习笔记目录。"
               ],
               "children": {
-                "_Scan与Wrapper笔记.md": {
+                "01_DFT基础讲解笔记.md": {
                   "kind": "file",
                   "desc": "Scan 与 Wrapper 章节笔记",
                   "detail": [
