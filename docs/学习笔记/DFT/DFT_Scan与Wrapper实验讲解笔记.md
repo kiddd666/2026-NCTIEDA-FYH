@@ -134,7 +134,7 @@ Fig.2.9(b) 波形照着讲：SE 低电平期间，每个上升沿 Q 依次装进
 
 ### 2.3 对上实验 E05
 
-[tiny_core_scan.v](../../experiments/E05_tiny_core_scan/src/tiny_core_scan.v) 里的存储行为就是 Muxed-D 的 RTL 行为模型：
+[tiny_core_scan.v](tiny_core_scan.v) 里的存储行为就是 Muxed-D 的 RTL 行为模型：
 
 ```verilog
 always @(posedge clk or negedge rst_n) begin
@@ -190,7 +190,7 @@ assign scan_out = q[3];
 > **读图 Fig.2.14(b)**
 > - **讲什么**：施加 V₁、V₂ 两条向量的完整时钟拍——S（移位）、H（保持）、C（捕获）三种拍型的交替。
 > - **重点观察**：①SE 在 S 段为 1、H 段拉低、C 段保持 0；②SFF₁~₃.Q 行展示数据逐拍推进与捕获瞬间（椭圆圈出的 V₁:PPI、V₂:PPI）；③两个 H 拍分别服务"SE 稳定+施加 PI"和"SE 恢复+观察 SO"。
-> - **对应实验**：E05（testbench 各阶段与这张图的 S/H/C 一一对应，时间窗见 [E05 README §7](../../experiments/E05_tiny_core_scan/README.md)）。
+> - **对应实验**：E05（testbench 各阶段与这张图的 S/H/C 一一对应，时间窗见 [E05 README §7](FYH/experiments/E05_tiny_core_scan/README.md)）。
 > - **代码对应**：`tiny_core_scan_tb.v` 的 `shift_in_bit`（S）、阶段切换处对 `scan_en` 的赋值（H）、CAPTURE 段单拍（C）。
 
 这是本节要讲透的问题。Fig.2.14(b) 的横轴是时钟拍，字母含义：S=Shift、C=Capture、H=Hold（保持拍）。施加一个测试向量 V₁ 的完整节奏：
@@ -215,7 +215,7 @@ flowchart LR
 
 ### 3.3 用 E05 的数字走一遍
 
-E05 的 testbench（[tiny_core_scan_tb.v](../../experiments/E05_tiny_core_scan/tb/tiny_core_scan_tb.v)）就是 Fig.2.14(b) 的四拍缩小版：
+E05 的 testbench（[tiny_core_scan_tb.v](tiny_core_scan_tb.v)）就是 Fig.2.14(b) 的四拍缩小版：
 
 1. **Shift-in `1010`**：逐位移入，注意顺序——第一位 `1` 进 q[0]，4 拍后被推到链尾 q[3]，结束时 q=1010；
 2. **Capture**：scan_en=0，置 in_a=1, in_b=1, in_c=0，打一拍。手算：d0=1^1=0，d1=q[0]&1=0，d2=q[1]^q[0]=1^0=1，d3=q[2]|0=0 → 新 q={d3,d2,d1,d0}=**0100** ✓
@@ -545,7 +545,7 @@ CTL（Core Test Language）= IEEE 1450 STIL 的扩展，是核提供方交给集
 
 ## 9. 当前状态与下一步
 
-- **E05（已完成并通过验收，2026-09-05）**：在既有 shift/capture/shift-out 结果上补齐 `scan_en=0` 功能模式四拍校验与移出后回功能校验，全部 PASS；目录重构为统一交付格式（`src/ tb/ build/ waves/ scripts/`），[README](../../experiments/E05_tiny_core_scan/README.md) 按 11 节统一格式重写，另附 [results.md](../../experiments/E05_tiny_core_scan/results.md) 结果记录（含一次黄金模型算错的失败留证）。本笔记第 2、3、6 节反复引用它作为讲解载体。
+- **E05（已完成并通过验收，2026-09-05）**：在既有 shift/capture/shift-out 结果上补齐 `scan_en=0` 功能模式四拍校验与移出后回功能校验，全部 PASS；目录重构为统一交付格式（`src/ tb/ build/ waves/ scripts/`），[README](FYH/experiments/E05_tiny_core_scan/README.md) 按 11 节统一格式重写，另附 [results.md](results.md) 结果记录（含一次黄金模型算错的失败留证）。本笔记第 2、3、6 节反复引用它作为讲解载体。
 - **E06（下一个，待确认后开始）**：按第 6.5 节草案在 tiny_core 上做 flush test 与故障注入，按统一交付格式建 `experiments/E06_flush_test/`。验收判据见 6.5。纪律：完成 → 总结 → 更新 README → 停止等 review。
 - **E07 / E08**：排在 E06 之后，目标见第 8 章表格与第 4、7 节。
 - **本笔记**：覆盖教材 2.2–2.7、10.4.2–10.4.5 指定全部小节与全部指定插图（Fig.2.9/2.14/2.23/2.26/2.27/10.21–10.26 均已核对图号为原文插图，每图附读图块）。
@@ -553,7 +553,7 @@ CTL（Core Test Language）= IEEE 1450 STIL 的扩展，是核提供方交给集
 
 ## 参考资料
 
-- 教材原文（本次精读使用）：[学习材料/DFT补强/VLSI Test Principles and Architectures - Design for Testability.md](../../../学习材料/DFT补强/VLSI%20Test%20Principles%20and%20Architectures%20-%20Design%20for%20Testability.md)
-- 实验 E05：[README](../../experiments/E05_tiny_core_scan/README.md) / [results.md](../../experiments/E05_tiny_core_scan/results.md) / [src/tiny_core_scan.v](../../experiments/E05_tiny_core_scan/src/tiny_core_scan.v) / [tb/tiny_core_scan_tb.v](../../experiments/E05_tiny_core_scan/tb/tiny_core_scan_tb.v) / [waves/wave.vcd](../../experiments/E05_tiny_core_scan/waves/wave.vcd)
+- 教材原文（本次精读使用）：[学习材料/DFT补强/VLSI Test Principles and Architectures - Design for Testability.md](VLSI%20Test%20Principles%20and%20Architectures%20-%20Design%20for%20Testability.md)
+- 实验 E05：[README](FYH/experiments/E05_tiny_core_scan/README.md) / [results.md](results.md) / [src/tiny_core_scan.v](tiny_core_scan.v) / [tb/tiny_core_scan_tb.v](tiny_core_scan_tb.v) / [waves/wave.vcd](wave.vcd)
 - 学习规划（现存）：[02_9.2学习计划与实验方案](../技术路线与实验规划/02_9.2学习计划与实验方案.md)
 - 外部引用：暂无（本笔记全部内容来自上述仓库内教材与实验产物）

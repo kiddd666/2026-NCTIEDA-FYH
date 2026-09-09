@@ -461,6 +461,6 @@ CTL 的核心价值是把“核的测试数据”和“系统集成时如何施�
 ## 参考资料
 
 - 教材原文：[VLSI Test Principles and Architectures - Design for Testability](<../../../../学习材料/DFT补强/VLSI Test Principles and Architectures - Design for Testability.md>)（重点阅读第 2 章和第 10 章 10.4.2～10.4.5）
-- FYH 中已有的实验导向讲解：[DFT Scan 与 Wrapper 实验讲解笔记](../DFT_Scan与Wrapper实验讲解笔记.md)
+- FYH 中已有的实验导向讲解：[DFT Scan 与 Wrapper 实验讲解笔记](DFT_Scan与Wrapper实验讲解笔记.md)
 
 本笔记是基于上述教材的重组理解稿，配图为教材相关图示的本地副本；没有逐段翻译教材，也没有把 IEEE 1500 的全部标准细节展开。
