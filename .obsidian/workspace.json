@@ -1,0 +1,274 @@
+{
+  "main": {
+    "id": "3f5f54256f2c0af9",
+    "type": "split",
+    "children": [
+      {
+        "id": "b79c3b82e73d73f3",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "79d5b29ab8bdd5cf",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "docs/学习材料/DFT补强/VLSI Test Principles and Architectures - Design for Testability.md",
+                "mode": "source",
+                "source": false
+              },
+              "pinned": true,
+              "icon": "lucide-file",
+              "title": "VLSI Test Principles and Architectures - Design for Testability"
+            }
+          },
+          {
+            "id": "60b807ec8ac1eb18",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "docs/学习笔记/DFT/VLSI测试原理和架构.md",
+                "mode": "source",
+                "source": false
+              },
+              "pinned": true,
+              "icon": "lucide-file",
+              "title": "VLSI测试原理和架构"
+            }
+          },
+          {
+            "id": "904002d6b4c58a7d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "docs/学习笔记/知识卡片合集/00.Case与card的关系.md",
+                "mode": "preview",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "00.Case与card的关系"
+            }
+          }
+        ],
+        "currentTab": 2
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "ed5b47d1f4d12366",
+    "type": "split",
+    "children": [
+      {
+        "id": "5ca9409d0ba605a2",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ac3c8d3d9f6e5457",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          },
+          {
+            "id": "2e581525fac6ed7c",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          },
+          {
+            "id": "4ffe0c06ef5bb9c0",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-bookmark",
+              "title": "书签"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "right": {
+    "id": "abfe7e8255d80fc4",
+    "type": "split",
+    "children": [
+      {
+        "id": "b40fce477fbbfe8a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "bbf6aa4bb27f81ff",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "docs/学习笔记/知识卡片合集/00.Case与card的关系.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "反向链接"
+            }
+          },
+          {
+            "id": "b623a510cf74b006",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "docs/学习笔记/知识卡片合集/00.Case与card的关系.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "出链"
+            }
+          },
+          {
+            "id": "d5d3f971bc33f660",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
+            }
+          },
+          {
+            "id": "47a5df18dce3675b",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "添加笔记属性"
+            }
+          },
+          {
+            "id": "2dc59fc724130533",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "docs/学习笔记/知识卡片合集/00.Case与card的关系.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "大纲"
+            }
+          }
+        ],
+        "currentTab": 4
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "bases:新建数据库": false
+    }
+  },
+  "active": "904002d6b4c58a7d",
+  "lastOpenFiles": [
+    "docs/学习笔记/知识卡片合集/00.Rule Card 的字段解析.md",
+    "docs/学习笔记/知识卡片合集/01.T1C1解读.md",
+    "docs/学习笔记/知识卡片合集/03.T2C1解读.md",
+    "docs/学习笔记/知识卡片合集/02.T1C2解读.md",
+    "docs/DFT规则卡报告/05-Public材料指纹报告.md",
+    "docs/DFT规则卡报告/04-Task2静态DFT规则卡报告.md",
+    "docs/DFT规则卡报告/03-Task1静态DFT规则卡报告.md",
+    "docs/DFT规则卡报告/02-规则索引与证据使用报告.md",
+    "docs/DFT规则卡报告/01-Public地图与运行契约报告.md",
+    "docs/DFT规则卡报告/05-Public材料指纹讲稿.md",
+    "docs/DFT规则卡报告/03-Task1静态DFT规则卡讲稿.md",
+    "docs/DFT规则卡报告/04-Task2静态DFT规则卡讲稿.md",
+    "docs/DFT规则卡报告/02-规则索引与证据使用讲稿.md",
+    "docs/DFT规则卡报告/01-Public地图与运行契约讲稿.md",
+    "docs/DFT规则卡报告",
+    "docs/DFT规则卡讲稿/05-Public材料指纹讲稿.md",
+    "docs/DFT规则卡讲稿/04-Task2静态DFT规则卡讲稿.md",
+    "docs/DFT规则卡讲稿/03-Task1静态DFT规则卡讲稿.md",
+    "docs/DFT规则卡讲稿/02-规则索引与证据使用讲稿.md",
+    "docs/DFT规则卡讲稿/01-Public地图与运行契约讲稿.md",
+    "docs/DFT规则卡讲稿",
+    "docs/学习笔记/知识卡片合集/00.Case与card的关系.md",
+    "docs/学习笔记/知识卡片合集/02.有选择地重连 ICG.md",
+    "docs/学习笔记/DFT/VLSI测试原理和架构.md",
+    "docs/学习笔记/知识卡片合集/01.T1C1解读1.md",
+    "docs/学习笔记/知识卡片合集",
+    "docs/学习笔记/DFT/01_DFT基础讲解笔记.md",
+    "docs/学习材料/DFT补强/VLSI Test Principles and Architectures - Design for Testability.md",
+    "docs/学习材料/DFT补强/assets/数字设计和计算机体系结构原书第2版(MinerU)/image_99.jpg",
+    "docs/学习材料/DFT补强/assets/数字设计和计算机体系结构原书第2版(MinerU)/image_98.jpg",
+    "docs/学习材料/DFT补强/assets/数字设计和计算机体系结构原书第2版(MinerU)/image_97.jpg",
+    "docs/学习材料/DFT补强/assets/数字设计和计算机体系结构原书第2版(MinerU)/image_96.jpg",
+    "docs/学习材料/DFT补强/assets/数字设计和计算机体系结构原书第2版(MinerU)/image_95.jpg",
+    "docs/学习材料/DFT补强/assets/数字设计和计算机体系结构原书第2版(MinerU)/image_94.webp",
+    "docs/学习材料/DFT补强/assets/数字设计和计算机体系结构原书第2版(MinerU)/image_93.jpg",
+    "docs/学习材料/DFT补强/assets/数字设计和计算机体系结构原书第2版(MinerU)/image_92.jpg",
+    "docs/学习材料/DFT补强/assets/数字设计和计算机体系结构原书第2版(MinerU)/image_91.jpg",
+    "docs/学习材料/DFT补强/assets/数字设计和计算机体系结构原书第2版(MinerU)/image_90.jpg",
+    "docs/学习材料/DFT补强/assets/数字设计和计算机体系结构原书第2版(MinerU)",
+    "docs/学习材料/DFT补强/assets/VLSI测试方法学和可测性设计(MinerU)",
+    "docs/学习材料/DFT补强/assets/VLSI Test Principles and Architectures(MinerU)",
+    "docs/学习材料/DFT补强/assets",
+    "docs/学习材料/DFT补强/数字设计和计算机体系结构原书第2版.md",
+    "docs/学习材料/DFT补强",
+    "docs/学习材料",
+    "未命名"
+  ]
+}

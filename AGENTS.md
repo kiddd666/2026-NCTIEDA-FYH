@@ -119,6 +119,12 @@ FYH/
 ├── .vscode/     # VS Code工作区配置
 ├── AGENTS.md    # FYH个人协作规则
 ├── docs/        # 个人研究与学习文档
+│   ├── DFT规则卡报告/  # DFT规则卡报告
+│   │   ├── 01-Public地图与运行契约报告.md # Public地图契约讲稿
+│   │   ├── 02-规则索引与证据使用报告.md     # 规则索引讲稿
+│   │   ├── 03-Task1静态DFT规则卡报告.md # Task1规则卡讲稿
+│   │   ├── 04-Task2静态DFT规则卡报告.md # Task2规则卡讲稿
+│   │   └── 05-Public材料指纹报告.md    # 材料指纹讲稿
 │   ├── 学习笔记/      # DFT学习笔记
 │   │   ├── agent使用技巧/                # Agent使用技巧笔记
 │   │   │   └── codex使用技巧.md # Codex使用技巧笔记
@@ -145,7 +151,11 @@ FYH/
 │   │   │   └── fig2_27_scan_design_flow.jpg             # 教材Fig.2.27扫描设计流程
 │   │   ├── DFT/                      # DFT 章节笔记
 │   │   │   └── 01_DFT基础讲解笔记.md # Scan 与 Wrapper 章节笔记
-│   │   └── DFT_Scan与Wrapper实验讲解笔记.md # Scan与Wrapper实验讲解笔记
+│   │   ├── DFT_Scan与Wrapper实验讲解笔记.md # Scan与Wrapper实验讲解笔记
+│   │   └── 知识卡片合集/                   # 案例解读与DFT知识卡片
+│   │       ├── 01.T1C1解读.md # T1C1前置处理解读
+│   │       ├── 02.T1C2解读.md # T1C2功能分区扫描解读
+│   │       └── 02.T2C1解读.md # T2C1六类插链故障解读
 │   └── 技术路线与实验规划/ # 技术路线与实验规划文档
 │       ├── 00_项目核心任务.md       # 项目核心任务
 │       ├── 01_开源资料与实验.md      # 开源资料与实验

@@ -89,6 +89,47 @@
       "kind": "dir",
       "desc": "个人研究与学习文档",
       "children": {
+        "DFT规则卡报告": {
+          "kind": "dir",
+          "desc": "DFT规则卡报告",
+          "children": {
+            "01-Public地图与运行契约报告.md": {
+              "kind": "file",
+              "desc": "Public地图契约讲稿",
+              "detail": [
+                "面向外行讲解Public数据集地图、运行限制和输出契约。"
+              ]
+            },
+            "02-规则索引与证据使用报告.md": {
+              "kind": "file",
+              "desc": "规则索引讲稿",
+              "detail": [
+                "面向外行讲解规则索引、证据链和诊断路由。"
+              ]
+            },
+            "03-Task1静态DFT规则卡报告.md": {
+              "kind": "file",
+              "desc": "Task1规则卡讲稿",
+              "detail": [
+                "面向外行讲解任务一静态DFT规则卡及验证方法。"
+              ]
+            },
+            "04-Task2静态DFT规则卡报告.md": {
+              "kind": "file",
+              "desc": "Task2规则卡讲稿",
+              "detail": [
+                "面向外行讲解任务二故障诊断规则卡。"
+              ]
+            },
+            "05-Public材料指纹报告.md": {
+              "kind": "file",
+              "desc": "材料指纹讲稿",
+              "detail": [
+                "面向外行讲解Public材料指纹和可追溯性。"
+              ]
+            }
+          }
+        },
         "学习笔记": {
           "kind": "dir",
           "desc": "DFT学习笔记",
@@ -287,6 +328,33 @@
                 "experiments/E05_tiny_core_scan/results.md",
                 "experiments/E05_tiny_core_scan/src/tiny_core_scan.v"
               ]
+            },
+            "知识卡片合集": {
+              "kind": "dir",
+              "desc": "案例解读与DFT知识卡片",
+              "children": {
+                "01.T1C1解读.md": {
+                  "kind": "file",
+                  "desc": "T1C1前置处理解读",
+                  "detail": [
+                    "结合任务书、golden、原始网表与工具手册，解读ICG选择性重连、扫描单元映射和非扫描范围回替，列出三阶段验收与材料差异。"
+                  ]
+                },
+                "02.T1C2解读.md": {
+                  "kind": "file",
+                  "desc": "T1C2功能分区扫描解读",
+                  "detail": [
+                    "结合任务书、golden、网表与手册，解释AC97七个功能分区及默认分区、时钟与边沿隔离、链预算、扫描使能和完整验收。"
+                  ]
+                },
+                "02.T2C1解读.md": {
+                  "kind": "file",
+                  "desc": "T2C1六类插链故障解读",
+                  "detail": [
+                    "对照任务书、原始与参考脚本、预置问题和网表，解读六类故障、门控时钟路径、四链配置及完整插链验收。"
+                  ]
+                }
+              }
             }
           }
         },
